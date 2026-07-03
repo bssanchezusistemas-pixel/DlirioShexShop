@@ -1,15 +1,24 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
-export default function AdminLoginPage() {
+function AdminLoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (searchParams.get("error") === "denied") {
+      const supabase = createClient();
+      void supabase.auth.signOut();
+      setError("No tienes permisos para acceder al panel de administración.");
+    }
+  }, [searchParams]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +39,14 @@ export default function AdminLoginPage() {
 
     if (authError) {
       setError("Credenciales incorrectas. Intenta de nuevo.");
+      setLoading(false);
+      return;
+    }
+
+    const verifyRes = await fetch("/api/admin/categories");
+    if (!verifyRes.ok) {
+      await supabase.auth.signOut();
+      setError("No tienes permisos para acceder al panel de administración.");
       setLoading(false);
       return;
     }
@@ -99,5 +116,19 @@ export default function AdminLoginPage() {
         </button>
       </form>
     </div>
+  );
+}
+
+export default function AdminLoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="w-full max-w-md rounded-2xl border border-white/10 bg-cinema-dark p-8 text-center text-sm text-white/50">
+          Cargando...
+        </div>
+      }
+    >
+      <AdminLoginForm />
+    </Suspense>
   );
 }

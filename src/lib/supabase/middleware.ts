@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { isAdminUser } from "@/lib/is-admin-user";
 
 function copyCookies(from: NextResponse, to: NextResponse) {
   from.cookies.getAll().forEach((cookie) => {
@@ -47,7 +48,16 @@ export async function updateSession(request: NextRequest) {
     return redirectResponse;
   }
 
-  if (isLoginPage && user) {
+  if (isAdminRoute && !isLoginPage && user && !isAdminUser(user)) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/admin/login";
+    url.searchParams.set("error", "denied");
+    const redirectResponse = NextResponse.redirect(url);
+    copyCookies(supabaseResponse, redirectResponse);
+    return redirectResponse;
+  }
+
+  if (isLoginPage && user && isAdminUser(user)) {
     const url = request.nextUrl.clone();
     url.pathname = "/admin";
     const redirectResponse = NextResponse.redirect(url);

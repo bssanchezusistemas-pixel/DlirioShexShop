@@ -2,11 +2,17 @@ import { NextResponse } from "next/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { BUSINESS, buildWhatsAppUrl, formatCOP } from "@/data/catalog";
 import {
+  isValidColombianPhone,
   isValidDeliveryType,
+  normalizePhone,
   validateOrderLines,
 } from "@/lib/order-validation";
+import { checkRateLimit, getClientIp } from "@/lib/rate-limit";
 import type { CreateOrderInput } from "@/lib/types";
 import type { DbProduct } from "@/lib/types";
+
+const MAX_ORDERS_PER_PHONE_PER_HOUR = 5;
+const MAX_ORDERS_PER_IP_PER_HOUR = 15;
 
 function buildOrderWhatsAppMessage(
   input: CreateOrderInput,
@@ -68,13 +74,61 @@ async function isCatalogAvailable(): Promise<boolean> {
   return !catError && !prodError && (categories?.length ?? 0) > 0 && (count ?? 0) > 0;
 }
 
+async function countRecentOrdersByPhone(
+  supabase: ReturnType<typeof createAdminClient>,
+  phone: string,
+): Promise<number> {
+  const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000).toISOString();
+  const { data: customers } = await supabase
+    .from("customers")
+    .select("id")
+    .eq("phone", phone);
+
+  if (!customers?.length) return 0;
+
+  const customerIds = customers.map((c) => c.id);
+  const { count } = await supabase
+    .from("orders")
+    .select("*", { count: "exact", head: true })
+    .in("customer_id", customerIds)
+    .gte("created_at", oneHourAgo);
+
+  return count ?? 0;
+}
+
 export async function POST(request: Request) {
   try {
+    const clientIp = getClientIp(request);
+    const ipLimit = checkRateLimit(
+      `orders:ip:${clientIp}`,
+      MAX_ORDERS_PER_IP_PER_HOUR,
+      60 * 60 * 1000,
+    );
+    if (!ipLimit.allowed) {
+      return NextResponse.json(
+        { error: "Demasiados pedidos. Intenta de nuevo más tarde." },
+        {
+          status: 429,
+          headers: ipLimit.retryAfterSec
+            ? { "Retry-After": String(ipLimit.retryAfterSec) }
+            : undefined,
+        },
+      );
+    }
+
     const body = (await request.json()) as CreateOrderInput;
 
     if (!body.customer?.name?.trim() || !body.customer?.phone?.trim()) {
       return NextResponse.json(
         { error: "Nombre y teléfono son requeridos" },
+        { status: 400 },
+      );
+    }
+
+    const normalizedPhone = normalizePhone(body.customer.phone);
+    if (!isValidColombianPhone(body.customer.phone)) {
+      return NextResponse.json(
+        { error: "Ingresa un celular colombiano válido (10 dígitos, empieza en 3)." },
         { status: 400 },
       );
     }
@@ -101,6 +155,14 @@ export async function POST(request: Request) {
     }
 
     const supabase = createAdminClient();
+
+    const recentByPhone = await countRecentOrdersByPhone(supabase, normalizedPhone);
+    if (recentByPhone >= MAX_ORDERS_PER_PHONE_PER_HOUR) {
+      return NextResponse.json(
+        { error: "Has enviado varios pedidos recientemente. Intenta más tarde." },
+        { status: 429 },
+      );
+    }
 
     const productIds = [...new Set(body.lines?.map((l) => l.productId) ?? [])];
     if (!productIds.length) {
@@ -137,7 +199,10 @@ export async function POST(request: Request) {
     }
 
     const whatsappMessage = buildOrderWhatsAppMessage(
-      body,
+      {
+        ...body,
+        customer: { ...body.customer, phone: normalizedPhone },
+      },
       validation.validated,
       validation.totalAmount,
     );
@@ -154,7 +219,7 @@ export async function POST(request: Request) {
       "create_order_with_stock",
       {
         p_customer_name: body.customer.name.trim(),
-        p_customer_phone: body.customer.phone.trim(),
+        p_customer_phone: normalizedPhone,
         p_delivery_type: body.deliveryType,
         p_delivery_address:
           body.deliveryType === "delivery"

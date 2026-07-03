@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { slugify } from "@/lib/catalog-mapper";
 import { adminError } from "@/lib/admin-api";
 import { requireAdmin } from "@/lib/require-admin";
 
@@ -15,24 +16,16 @@ const MIME_ALIASES: Record<string, string> = {
   "image/x-png": "image/png",
 };
 
-const EXT_TO_MIME: Record<string, string> = {
-  ".jpg": "image/jpeg",
-  ".jpeg": "image/jpeg",
-  ".png": "image/png",
-  ".webp": "image/webp",
-};
-
 function resolveImageMime(file: File): string | null {
   const fromType = MIME_ALIASES[file.type] ?? file.type;
   if (fromType && ALLOWED_MIME.has(fromType)) return fromType;
-
-  const dot = file.name.lastIndexOf(".");
-  if (dot >= 0) {
-    const fromExt = EXT_TO_MIME[file.name.slice(dot).toLowerCase()];
-    if (fromExt) return fromExt;
-  }
-
   return null;
+}
+
+function sanitizeProductId(raw: string): string | null {
+  const slug = slugify(raw);
+  if (!slug || slug.length > 120) return null;
+  return slug;
 }
 
 export async function POST(request: Request) {
@@ -41,7 +34,12 @@ export async function POST(request: Request) {
 
   const formData = await request.formData();
   const file = formData.get("file") as File | null;
-  const productId = formData.get("productId")?.toString().trim();
+  const rawProductId = formData.get("productId")?.toString().trim();
+  const safeProductId = rawProductId ? sanitizeProductId(rawProductId) : null;
+
+  if (rawProductId && !safeProductId) {
+    return NextResponse.json({ error: "ID de producto inválido" }, { status: 400 });
+  }
 
   if (!file) {
     return NextResponse.json({ error: "Archivo requerido" }, { status: 400 });
@@ -85,8 +83,8 @@ export async function POST(request: Request) {
     );
   }
 
-  const fileName = productId
-    ? `${productId}-${Date.now()}.webp`
+  const fileName = safeProductId
+    ? `${safeProductId}-${Date.now()}.webp`
     : `${Date.now()}-${Math.random().toString(36).slice(2)}.webp`;
 
   const { error: uploadError } = await auth.supabase.storage

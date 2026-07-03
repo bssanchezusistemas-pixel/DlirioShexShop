@@ -71,6 +71,9 @@ export async function PATCH(
   }
   if (data.sizes !== undefined) updates.sizes = data.sizes;
   if (data.is_active !== undefined) updates.is_active = data.is_active;
+  if (data.stock !== undefined) updates.stock = data.stock;
+  if (data.badge !== undefined) updates.badge = data.badge;
+  if (data.image_url !== undefined) updates.image_url = data.image_url;
 
   const { data: product, error } = await auth.supabase
     .from("products")

@@ -14,6 +14,19 @@ export function isValidDeliveryType(value: unknown): value is DeliveryType {
   return typeof value === "string" && VALID_DELIVERY_TYPES.includes(value as DeliveryType);
 }
 
+/** Normalize Colombian phone to 10 digits (strips +57, spaces, dashes). */
+export function normalizePhone(phone: string): string {
+  let digits = phone.replace(/\D/g, "");
+  if (digits.startsWith("57") && digits.length === 12) {
+    digits = digits.slice(2);
+  }
+  return digits;
+}
+
+export function isValidColombianPhone(phone: string): boolean {
+  return /^3\d{9}$/.test(normalizePhone(phone));
+}
+
 export function resolveUnitPrice(
   product: Pick<DbProduct, "price" | "consult_only" | "sizes" | "name">,
   sizeLabel?: string,
