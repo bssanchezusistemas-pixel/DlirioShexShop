@@ -6,7 +6,9 @@ dotenv.config({ path: ".env.local" });
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const email = process.env.ADMIN_EMAIL?.trim();
+const email =
+  process.env.ADMIN_EMAIL?.trim() ||
+  process.env.ADMIN_EMAILS?.split(",")[0]?.trim();
 const password = process.env.ADMIN_PASSWORD;
 
 if (!url || !serviceKey || !anonKey) {
@@ -18,7 +20,7 @@ if (!url || !serviceKey || !anonKey) {
 
 if (!email || !password) {
   console.error(
-    "Define ADMIN_EMAIL y ADMIN_PASSWORD en .env.local antes de ejecutar este script.",
+    "Define ADMIN_PASSWORD y ADMIN_EMAIL (o ADMIN_EMAILS) en .env.local antes de ejecutar este script.",
   );
   process.exit(1);
 }
