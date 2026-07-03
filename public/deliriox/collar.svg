@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <defs>
+    <linearGradient id="collarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="50%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <filter id="collarShadow" x="-20%" y="-50%" width="140%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ff2d95" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <g filter="url(#collarShadow)">
+    <path d="M30 55 C30 28 70 18 120 18 C170 18 210 28 210 55 L210 70 C210 82 198 92 185 92 L175 92 L175 78 C175 72 170 68 165 68 L135 68 C130 68 125 72 125 78 L125 92 L115 92 C102 92 90 82 90 70 L90 55 C90 42 105 32 120 32 C135 32 150 42 150 55" fill="url(#collarGrad)" stroke="#333" stroke-width="2"/>
+    <rect x="118" y="88" width="24" height="18" rx="4" fill="#111" stroke="#444" stroke-width="1.5"/>
+    <circle cx="130" cy="97" r="5" fill="#ff2d95" opacity="0.9"/>
+    <path d="M210 62 C250 58 290 62 330 68 L340 70 L330 78 C290 72 250 68 210 72 Z" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+    <ellipse cx="345" cy="74" rx="12" ry="16" fill="#111" stroke="#444" stroke-width="1.5"/>
+  </g>
+</svg>

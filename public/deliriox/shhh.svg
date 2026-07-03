@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" fill="none">
+  <defs>
+    <linearGradient id="silhouetteGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <!-- Person silhouette - shhh gesture -->
+  <ellipse cx="200" cy="95" rx="72" ry="82" fill="url(#silhouetteGrad)"/>
+  <path d="M120 175 C115 220 110 280 108 340 L108 600 L292 600 L292 340 C290 280 285 220 280 175 C260 165 240 160 200 160 C160 160 140 165 120 175Z" fill="url(#silhouetteGrad)"/>
+  <!-- Raised arm with finger to lips -->
+  <path d="M280 175 C310 150 340 130 355 115 C365 105 375 100 385 108 C395 116 390 130 378 142 C360 158 330 178 300 195 L285 205 C275 210 268 200 272 188 Z" fill="url(#silhouetteGrad)"/>
+  <ellipse cx="368" cy="118" rx="18" ry="22" fill="url(#silhouetteGrad)" transform="rotate(-15 368 118)"/>
+  <!-- Finger near mouth -->
+  <rect x="175" y="118" width="14" height="42" rx="7" fill="url(#silhouetteGrad)" transform="rotate(8 182 139)"/>
+</svg>

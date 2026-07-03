@@ -23,6 +23,11 @@
 # misc
 .DS_Store
 *.pem
+.tmp/
+build-out.txt
+build-webpack.txt
+build-output.log
+dev-server.log
 
 # debug
 npm-debug.log*

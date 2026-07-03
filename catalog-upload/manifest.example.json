@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "name": "Ejemplo producto",
+      "price": 89000,
+      "category_id": "juguetes",
+      "description": "Descripción del producto",
+      "stock": 10,
+      "image": "ejemplo.jpg",
+      "badge": "Nuevo"
+    }
+  ]
+}
