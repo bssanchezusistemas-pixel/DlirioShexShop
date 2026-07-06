@@ -8,10 +8,12 @@ import { LocationSection } from "@/components/LocationSection";
 import { CartDrawer } from "@/components/CartDrawer";
 import { FloatingActions } from "@/components/FloatingActions";
 import { Footer } from "@/components/Footer";
+import { LocalBusinessJsonLd } from "@/components/LocalBusinessJsonLd";
 
 export default function Home() {
   return (
     <AgeGate>
+      <LocalBusinessJsonLd />
       <Header />
       <main>
         <Hero />

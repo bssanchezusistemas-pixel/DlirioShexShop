@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import { getSiteUrl } from "@/lib/site-url";
+
+const siteUrl = getSiteUrl();
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 
 const heroDisplay = Cormorant_Garamond({
   subsets: ["latin"],
@@ -16,6 +20,7 @@ const heroSans = Jost({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Delirio X Sex Shop | Zarzal, Valle del Cauca",
   description:
     "Tienda erótica en Zarzal. Juguetes, lencería, cosméticos íntimos SEN ÍNTIMO. Domicilios gratis. Pedidos por WhatsApp.",
@@ -27,12 +32,24 @@ export const metadata: Metadata = {
     "SEN ÍNTIMO",
     "domicilios",
   ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  ...(googleVerification
+    ? { verification: { google: googleVerification } }
+    : {}),
   openGraph: {
     title: "Delirio X Sex Shop",
     description:
       "El arte del amor y el placer en un solo lugar. Domicilios gratis en Zarzal.",
     locale: "es_CO",
     type: "website",
+    url: siteUrl,
+    siteName: "Delirio X Sex Shop",
   },
 };
 
