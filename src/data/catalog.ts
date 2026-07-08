@@ -6,6 +6,8 @@ export type CatalogCategoryId =
   | "estimulantes"
   | "lenceria"
   | "higiene"
+  | "dilatadores"
+  | "desensibilizantes"
   | "otros";
 
 export interface CatalogItemSize {
@@ -445,6 +447,20 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
         stock: 10,
       },
     ],
+  },
+  {
+    id: "dilatadores",
+    label: "Dilatadores",
+    tagline: "Progresión suave para mayor comodidad",
+    accentColor: "#c084fc",
+    items: [],
+  },
+  {
+    id: "desensibilizantes",
+    label: "Desensibilizantes",
+    tagline: "Reduce la sensibilidad para mayor control",
+    accentColor: "#818cf8",
+    items: [],
   },
   {
     id: "otros",

@@ -6,6 +6,8 @@ export type CatalogCategoryId =
   | "estimulantes"
   | "lenceria"
   | "higiene"
+  | "dilatadores"
+  | "desensibilizantes"
   | "otros";
 
 export interface CatalogItemSize {
