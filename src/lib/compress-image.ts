@@ -10,8 +10,14 @@ export const COMPRESS_WEBP_QUALITY = 78;
  * Compress a product image: auto-rotate, resize to fit inside 900×900, output WebP.
  */
 export async function compressImageBuffer(input: Buffer): Promise<Buffer> {
-  return sharp(input)
-    .rotate()
+  const image = sharp(input, { failOn: "none" }).rotate();
+
+  const metadata = await image.metadata();
+  if (!metadata.width || !metadata.height) {
+    throw new Error("invalid_image");
+  }
+
+  return image
     .resize(COMPRESS_MAX_DIMENSION, COMPRESS_MAX_DIMENSION, {
       fit: "inside",
       withoutEnlargement: true,

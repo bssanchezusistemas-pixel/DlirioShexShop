@@ -276,7 +276,7 @@ export function ProductForm({ product }: ProductFormProps) {
         )}
         <input
           type="file"
-          accept="image/jpeg,image/png,image/webp"
+          accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.heic,.heif"
           onChange={handleImageUpload}
           disabled={uploading}
           className="text-sm text-white/60"

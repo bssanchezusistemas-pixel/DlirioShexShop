@@ -232,7 +232,7 @@ export function ProductVariantEditor({
                   <div className="min-w-0 flex-1">
                     <input
                       type="file"
-                      accept="image/jpeg,image/png,image/webp"
+                      accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.heic,.heif"
                       onChange={(e) => handleImageUpload(row.id, e)}
                       disabled={uploadingRowId === row.id}
                       className="w-full text-sm text-white/60 file:mr-3 file:rounded-lg file:border-0 file:bg-white/10 file:px-3 file:py-1.5 file:text-xs file:uppercase file:tracking-[0.1em] file:text-white/80 hover:file:bg-white/15"
