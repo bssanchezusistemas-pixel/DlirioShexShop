@@ -7,9 +7,8 @@ INSERT INTO categories (id, label, tagline, accent_color, sort_order) VALUES
   ('estimulantes', 'Estimulantes', 'Más rendimiento, más confianza', '#9b2fd4', 5),
   ('lenceria', 'Lencería y fantasías', 'Seducción y estilo para cada ocasión', '#e91e8c', 6),
   ('higiene', 'Higiene íntima', 'Cuidado y bienestar personal', '#22d3ee', 7),
-  ('dilatadores', 'Dilatadores', 'Progresión suave para mayor comodidad', '#c084fc', 8),
-  ('desensibilizantes', 'Desensibilizantes', 'Reduce la sensibilidad para mayor control', '#818cf8', 9),
-  ('otros', 'Otros', 'Accesorios y productos especiales', '#a855f7', 10)
+  ('dilatadores-desensibilizantes', 'Dilatadores y desensibilizantes', 'Progresión y control para mayor comodidad', '#a78bfa', 8),
+  ('otros', 'Otros', 'Accesorios y productos especiales', '#a855f7', 9)
 ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO products (id, category_id, name, description, price, stock, badge, consult_only, sizes) VALUES

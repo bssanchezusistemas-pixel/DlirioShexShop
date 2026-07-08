@@ -107,9 +107,8 @@ async function seedCategories() {
     { id: "estimulantes", label: "Estimulantes", tagline: "Más rendimiento, más confianza", accent_color: "#9b2fd4", sort_order: 5 },
     { id: "lenceria", label: "Lencería y fantasías", tagline: "Seducción y estilo para cada ocasión", accent_color: "#e91e8c", sort_order: 6 },
     { id: "higiene", label: "Higiene íntima", tagline: "Cuidado y bienestar personal", accent_color: "#22d3ee", sort_order: 7 },
-    { id: "dilatadores", label: "Dilatadores", tagline: "Progresión suave para mayor comodidad", accent_color: "#c084fc", sort_order: 8 },
-    { id: "desensibilizantes", label: "Desensibilizantes", tagline: "Reduce la sensibilidad para mayor control", accent_color: "#818cf8", sort_order: 9 },
-    { id: "otros", label: "Otros", tagline: "Accesorios y productos especiales", accent_color: "#a855f7", sort_order: 10 },
+    { id: "dilatadores-desensibilizantes", label: "Dilatadores y desensibilizantes", tagline: "Progresión y control para mayor comodidad", accent_color: "#a78bfa", sort_order: 8 },
+    { id: "otros", label: "Otros", tagline: "Accesorios y productos especiales", accent_color: "#a855f7", sort_order: 9 },
   ];
 
   const { error } = await supabase.from("categories").upsert(categories, { onConflict: "id" });
