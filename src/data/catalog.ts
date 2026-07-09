@@ -1,12 +1,16 @@
 export type CatalogCategoryId =
-  | "juguetes"
-  | "sen-intimo"
-  | "lubricantes"
-  | "retardantes"
-  | "estimulantes"
   | "lenceria"
-  | "higiene"
+  | "disfraces"
+  | "lubricantes"
+  | "sen-intimo"
+  | "cuidado-intimo"
+  | "retardantes"
+  | "juguetes-hombres"
+  | "juguetes-mujeres"
+  | "potenciadores-femeninos"
+  | "potenciadores-masculinos"
   | "dilatadores-desensibilizantes"
+  | "sadomasoquismo"
   | "otros";
 
 export interface CatalogItemSize {
@@ -54,96 +58,59 @@ export const BUSINESS = {
 
 export const CATALOG_CATEGORIES: CatalogCategory[] = [
   {
-    id: "juguetes",
-    label: "Juguetes",
-    tagline: "Variedad para explorar el placer",
-    accentColor: "#ff2d95",
+    id: "lenceria",
+    label: "Lencería",
+    tagline: "Seducción y estilo para cada ocasión",
+    accentColor: "#e91e8c",
     items: [
       {
-        id: "vib-huevo-control-remoto",
-        name: "Vibrador huevo con control remoto",
+        id: "gummies-viking-cereza-60g",
+        name: "Ropa íntima comestible Gummies Viking — Cereza",
         description:
-          "Huevo vibrador rosa con control remoto inalámbrico. Diseño discreto, textura suave, cordón de extracción. Ideal para estimulación interna y externa.",
-        price: 100000,
-        image: "/catalog/vib-huevo-control-remoto.webp",
+          "Lencería comestible en gomas sabor cereza/frutas. Producto divertido para parejas. Peso neto 60 g. Ref: Ref03525.",
+        price: 35000,
+        image: "/catalog/gummies-viking-cereza-60g.webp",
         stock: 10,
-        badge: "Nuevo",
       },
+    ],
+  },
+  {
+    id: "disfraces",
+    label: "Disfraces",
+    tagline: "Fantasías y role play",
+    accentColor: "#f472b6",
+    items: [],
+  },
+  {
+    id: "lubricantes",
+    label: "Lubricantes",
+    tagline: "Lubricación suave con sabor",
+    accentColor: "#ff6b35",
+    items: [
       {
-        id: "private-massager-control-remoto",
-        name: "Private Massager — Vibrador con control remoto",
+        id: "dsex-hot-oil-30ml",
+        name: "Hot Oil Dsex shop labs — 30 ml",
         description:
-          "Vibrador huevo en silicona con control remoto inalámbrico. 18 funciones de vibración, impermeable, silencioso. Recargable por USB. Incluye cable de carga y empaque.",
-        price: 90000,
-        image: "/catalog/private-massager-control-remoto.webp",
+          "Aceite y lubricante caliente saborizado para masaje. Lubricante comestible con sabor, línea Hot Oil de Dsex shop labs. Presentación 30 ml. Sabores disponibles: Chocolate, Piña colada, Maracuyá, Lechera, Chicle, Salpicón, Mora azul, Frutos rojos y Uva.",
+        sizes: [
+          { label: "Chocolate", price: 15000 },
+          { label: "Piña colada", price: 15000 },
+          { label: "Maracuyá", price: 15000 },
+          { label: "Lechera", price: 15000 },
+          { label: "Chicle", price: 15000 },
+          { label: "Salpicón", price: 15000 },
+          { label: "Mora azul", price: 15000 },
+          { label: "Frutos rojos", price: 15000 },
+          { label: "Uva", price: 15000 },
+        ],
+        image: "/catalog/dsex-hot-oil-30ml.webp",
         stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "vibrador-app-smartphone",
-        name: "Vibrador con control por app",
-        description:
-          "Huevo vibrador en silicona controlado desde el celular vía app Bluetooth. 9 modos de vibración, impermeable. Modos Classic, Music, Shake y más. Recargable.",
-        price: 100000,
-        image: "/catalog/vibrador-app-smartphone.webp",
-        stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "mini-bullet-vibrator",
-        name: "Mini Bullet Vibrator — Vibrador bala",
-        description:
-          "Vibrador bala compacto en acabado cromado. 10 modos de vibración, impermeable, silencioso. Recargable por USB. Tamaño mini, ideal para llevar.",
-        price: 70000,
-        image: "/catalog/mini-bullet-vibrator.webp",
-        stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "malawy-029-consolador",
-        name: "Consolador Malawy 029",
-        description:
-          "Consolador con funda transparente texturizada, núcleo interno y base negra. Modelo Malawy 029. Estimulación intensa, material suave. Incluye empaque.",
-        price: 60000,
-        image: "/catalog/malawy-029-consolador.webp",
-        stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "plug-anal-corazon-rosa",
-        name: "Plug anal corazón rosa con gema",
-        description:
-          "Plug anal rosa perla con base en forma de corazón y gema rosa facetada. Material metálico/acrílico brillante. Diseño elegante para principiantes o uso decorativo.",
-        price: 45000,
-        image: "/catalog/plug-anal-corazon-rosa.webp",
-        stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "kit-bondage-10-piezas",
-        name: "Kit bondage 10 piezas",
-        description:
-          "Set completo para parejas: esposas ajustables, antifaz, mordaza, flogger, pluma, cuerda, collar con correa, pinzas y conectores. Material negro con herrajes plateados. Ideal para iniciación.",
-        price: 30000,
-        image: "/catalog/kit-bondage-10-piezas.webp",
-        stock: 10,
-        badge: "Nuevo",
-      },
-      {
-        id: "set-bondage-anti-back-handcuffs",
-        name: "Set bondage Anti-Back Handcuffs",
-        description:
-          "Arnés de bondage con collar acolchado en piel sintética, esposas para muñecas y correas ajustables. Sujeta las manos a la espalda. Incluye empaque. Role play para parejas.",
-        price: 45000,
-        image: "/catalog/set-bondage-anti-back-handcuffs.webp",
-        stock: 10,
-        badge: "Nuevo",
       },
     ],
   },
   {
     id: "sen-intimo",
-    label: "SEN ÍNTIMO",
+    label: "Sen íntimo",
     tagline: "Cosméticos íntimos con efectos únicos",
     accentColor: "#9b2fd4",
     items: [
@@ -234,28 +201,22 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
     ],
   },
   {
-    id: "lubricantes",
-    label: "Lubricantes",
-    tagline: "Lubricación suave con sabor",
-    accentColor: "#ff6b35",
+    id: "cuidado-intimo",
+    label: "Cuidado íntimo",
+    tagline: "Cuidado y bienestar personal",
+    accentColor: "#22d3ee",
     items: [
       {
-        id: "dsex-hot-oil-30ml",
-        name: "Hot Oil Dsex shop labs — 30 ml",
+        id: "cerotabu-adonis-ducha-anal",
+        name: "Cerotabú Adonis — Ducha anal",
         description:
-          "Aceite y lubricante caliente saborizado para masaje. Lubricante comestible con sabor, línea Hot Oil de Dsex shop labs. Presentación 30 ml. Sabores disponibles: Chocolate, Piña colada, Maracuyá, Lechera, Chicle, Salpicón, Mora azul, Frutos rojos y Uva.",
+          "Ducha anal y vaginal unisex. Silicona médica de alta calidad, libre de ftalatos. Capacidad 220 ml. Desarmable para fácil limpieza. Marca Cerotabú / Roky.",
         sizes: [
-          { label: "Chocolate", price: 15000 },
-          { label: "Piña colada", price: 15000 },
-          { label: "Maracuyá", price: 15000 },
-          { label: "Lechera", price: 15000 },
-          { label: "Chicle", price: 15000 },
-          { label: "Salpicón", price: 15000 },
-          { label: "Mora azul", price: 15000 },
-          { label: "Frutos rojos", price: 15000 },
-          { label: "Uva", price: 15000 },
+          { label: "Talla S", price: 25000 },
+          { label: "Talla M", price: 30000 },
+          { label: "Talla L", price: 35000 },
         ],
-        image: "/catalog/dsex-hot-oil-30ml.webp",
+        image: "/catalog/cerotabu-adonis-ducha-anal.webp",
         stock: 10,
       },
     ],
@@ -332,23 +293,97 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
     ],
   },
   {
-    id: "estimulantes",
-    label: "Estimulantes",
-    tagline: "Más rendimiento, más confianza",
-    accentColor: "#9b2fd4",
+    id: "juguetes-hombres",
+    label: "Juguetes para hombres",
+    tagline: "Placer pensado para él",
+    accentColor: "#38bdf8",
     items: [
       {
-        id: "big-penis-honey",
-        name: "Big Penis Honey",
+        id: "men-powerup-penis-pump",
+        name: "Agrandador de pene — Men Powerup",
         description:
-          "Estimulante sexual masculino 100% natural. Ginseng, maca, miel y hierbas seleccionadas. Paquete con 12 sobres de 15 g. Tomar 1 sobre diluido en agua 30 min antes.",
-        sizes: [
-          { label: "Paquete x12 sobres", price: 18000 },
-          { label: "Sobre individual", price: 7000 },
-        ],
-        image: "/catalog/big-penis-honey.webp",
+          "Cilindro en ABS para engrosar y alargar el pene. Bomba manual con manguera. Cilindro 220 mm × 65 mm. Marcas M, L y XL en el interior. Ref: RL35BA01-302. Producto +18.",
+        price: 70000,
+        image: "/catalog/men-powerup-penis-pump.webp",
         stock: 10,
+        badge: "+18",
       },
+    ],
+  },
+  {
+    id: "juguetes-mujeres",
+    label: "Juguetes para mujeres",
+    tagline: "Placer pensado para ella",
+    accentColor: "#ff2d95",
+    items: [
+      {
+        id: "vib-huevo-control-remoto",
+        name: "Vibrador huevo con control remoto",
+        description:
+          "Huevo vibrador rosa con control remoto inalámbrico. Diseño discreto, textura suave, cordón de extracción. Ideal para estimulación interna y externa.",
+        price: 100000,
+        image: "/catalog/vib-huevo-control-remoto.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+      {
+        id: "private-massager-control-remoto",
+        name: "Private Massager — Vibrador con control remoto",
+        description:
+          "Vibrador huevo en silicona con control remoto inalámbrico. 18 funciones de vibración, impermeable, silencioso. Recargable por USB. Incluye cable de carga y empaque.",
+        price: 90000,
+        image: "/catalog/private-massager-control-remoto.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+      {
+        id: "vibrador-app-smartphone",
+        name: "Vibrador con control por app",
+        description:
+          "Huevo vibrador en silicona controlado desde el celular vía app Bluetooth. 9 modos de vibración, impermeable. Modos Classic, Music, Shake y más. Recargable.",
+        price: 100000,
+        image: "/catalog/vibrador-app-smartphone.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+      {
+        id: "mini-bullet-vibrator",
+        name: "Mini Bullet Vibrator — Vibrador bala",
+        description:
+          "Vibrador bala compacto en acabado cromado. 10 modos de vibración, impermeable, silencioso. Recargable por USB. Tamaño mini, ideal para llevar.",
+        price: 70000,
+        image: "/catalog/mini-bullet-vibrator.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+      {
+        id: "malawy-029-consolador",
+        name: "Consolador Malawy 029",
+        description:
+          "Consolador con funda transparente texturizada, núcleo interno y base negra. Modelo Malawy 029. Estimulación intensa, material suave. Incluye empaque.",
+        price: 60000,
+        image: "/catalog/malawy-029-consolador.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+      {
+        id: "plug-anal-corazon-rosa",
+        name: "Plug anal corazón rosa con gema",
+        description:
+          "Plug anal rosa perla con base en forma de corazón y gema rosa facetada. Material metálico/acrílico brillante. Diseño elegante para principiantes o uso decorativo.",
+        price: 45000,
+        image: "/catalog/plug-anal-corazon-rosa.webp",
+        stock: 10,
+        badge: "Nuevo",
+      },
+    ],
+  },
+  {
+    id: "potenciadores-femeninos",
+    label: "Potenciadores femeninos",
+    tagline: "Deseo, lubricación y más placer",
+    accentColor: "#e879f9",
+    items: [
       {
         id: "gold-fly-original",
         name: "Original GOLD FLY™",
@@ -387,6 +422,35 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
         stock: 10,
       },
       {
+        id: "sexlove-plus-chewing-gum",
+        name: "Sexlove+ Chewing Gum — Chiclet estimulante femenino",
+        description:
+          "Chiclet estimulante sexual femenino, sabor frutas. Aumenta la libido y el deseo sexual. Efecto desde 40 minutos, dura aproximadamente 2 horas. Compatible con licor. Se mastica como un chicle normal.",
+        price: 12000,
+        image: "/catalog/sexlove-plus-chewing-gum.webp",
+        stock: 10,
+      },
+    ],
+  },
+  {
+    id: "potenciadores-masculinos",
+    label: "Potenciadores masculinos",
+    tagline: "Más rendimiento, más confianza",
+    accentColor: "#a855f7",
+    items: [
+      {
+        id: "big-penis-honey",
+        name: "Big Penis Honey",
+        description:
+          "Estimulante sexual masculino 100% natural. Ginseng, maca, miel y hierbas seleccionadas. Paquete con 12 sobres de 15 g. Tomar 1 sobre diluido en agua 30 min antes.",
+        sizes: [
+          { label: "Paquete x12 sobres", price: 18000 },
+          { label: "Sobre individual", price: 7000 },
+        ],
+        image: "/catalog/big-penis-honey.webp",
+        stock: 10,
+      },
+      {
         id: "groben-penis-gold",
         name: "Groben Penis Gold",
         description:
@@ -415,36 +479,6 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
         image: "/catalog/groben-penis-maxxx.webp",
         stock: 10,
       },
-      {
-        id: "sexlove-plus-chewing-gum",
-        name: "Sexlove+ Chewing Gum — Chiclet estimulante femenino",
-        description:
-          "Chiclet estimulante sexual femenino, sabor frutas. Aumenta la libido y el deseo sexual. Efecto desde 40 minutos, dura aproximadamente 2 horas. Compatible con licor. Se mastica como un chicle normal.",
-        price: 12000,
-        image: "/catalog/sexlove-plus-chewing-gum.webp",
-        stock: 10,
-      },
-    ],
-  },
-  {
-    id: "higiene",
-    label: "Higiene íntima",
-    tagline: "Cuidado y bienestar personal",
-    accentColor: "#22d3ee",
-    items: [
-      {
-        id: "cerotabu-adonis-ducha-anal",
-        name: "Cerotabú Adonis — Ducha anal",
-        description:
-          "Ducha anal y vaginal unisex. Silicona médica de alta calidad, libre de ftalatos. Capacidad 220 ml. Desarmable para fácil limpieza. Marca Cerotabú / Roky.",
-        sizes: [
-          { label: "Talla S", price: 25000 },
-          { label: "Talla M", price: 30000 },
-          { label: "Talla L", price: 35000 },
-        ],
-        image: "/catalog/cerotabu-adonis-ducha-anal.webp",
-        stock: 10,
-      },
     ],
   },
   {
@@ -455,39 +489,39 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
     items: [],
   },
   {
-    id: "otros",
-    label: "Otros",
-    tagline: "Accesorios y productos especiales",
-    accentColor: "#a855f7",
+    id: "sadomasoquismo",
+    label: "Sadomasoquismo",
+    tagline: "Bondage, control y exploración",
+    accentColor: "#f43f5e",
     items: [
       {
-        id: "men-powerup-penis-pump",
-        name: "Agrandador de pene — Men Powerup",
+        id: "kit-bondage-10-piezas",
+        name: "Kit bondage 10 piezas",
         description:
-          "Cilindro en ABS para engrosar y alargar el pene. Bomba manual con manguera. Cilindro 220 mm × 65 mm. Marcas M, L y XL en el interior. Ref: RL35BA01-302. Producto +18.",
-        price: 70000,
-        image: "/catalog/men-powerup-penis-pump.webp",
+          "Set completo para parejas: esposas ajustables, antifaz, mordaza, flogger, pluma, cuerda, collar con correa, pinzas y conectores. Material negro con herrajes plateados. Ideal para iniciación.",
+        price: 30000,
+        image: "/catalog/kit-bondage-10-piezas.webp",
         stock: 10,
-        badge: "+18",
+        badge: "Nuevo",
+      },
+      {
+        id: "set-bondage-anti-back-handcuffs",
+        name: "Set bondage Anti-Back Handcuffs",
+        description:
+          "Arnés de bondage con collar acolchado en piel sintética, esposas para muñecas y correas ajustables. Sujeta las manos a la espalda. Incluye empaque. Role play para parejas.",
+        price: 45000,
+        image: "/catalog/set-bondage-anti-back-handcuffs.webp",
+        stock: 10,
+        badge: "Nuevo",
       },
     ],
   },
   {
-    id: "lenceria",
-    label: "Lencería y fantasías",
-    tagline: "Seducción y estilo para cada ocasión",
-    accentColor: "#e91e8c",
-    items: [
-      {
-        id: "gummies-viking-cereza-60g",
-        name: "Ropa íntima comestible Gummies Viking — Cereza",
-        description:
-          "Lencería comestible en gomas sabor cereza/frutas. Producto divertido para parejas. Peso neto 60 g. Ref: Ref03525.",
-        price: 35000,
-        image: "/catalog/gummies-viking-cereza-60g.webp",
-        stock: 10,
-      },
-    ],
+    id: "otros",
+    label: "Otros productos",
+    tagline: "Accesorios y productos especiales",
+    accentColor: "#a855f7",
+    items: [],
   },
 ];
 

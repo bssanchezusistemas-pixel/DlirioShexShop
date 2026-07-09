@@ -100,15 +100,19 @@ async function seedCategories() {
   if (!existsSync(seedPath)) return;
 
   const categories = [
-    { id: "juguetes", label: "Juguetes", tagline: "Variedad para explorar el placer", accent_color: "#ff2d95", sort_order: 1 },
-    { id: "sen-intimo", label: "SEN ÍNTIMO", tagline: "Cosméticos íntimos con efectos únicos", accent_color: "#9b2fd4", sort_order: 2 },
+    { id: "lenceria", label: "Lencería", tagline: "Seducción y estilo para cada ocasión", accent_color: "#e91e8c", sort_order: 1 },
+    { id: "disfraces", label: "Disfraces", tagline: "Fantasías y role play", accent_color: "#f472b6", sort_order: 2 },
     { id: "lubricantes", label: "Lubricantes", tagline: "Lubricación suave con sabor", accent_color: "#ff6b35", sort_order: 3 },
-    { id: "retardantes", label: "Retardantes", tagline: "Prolonga el placer y controla tus sensaciones", accent_color: "#ff2d95", sort_order: 4 },
-    { id: "estimulantes", label: "Estimulantes", tagline: "Más rendimiento, más confianza", accent_color: "#9b2fd4", sort_order: 5 },
-    { id: "lenceria", label: "Lencería y fantasías", tagline: "Seducción y estilo para cada ocasión", accent_color: "#e91e8c", sort_order: 6 },
-    { id: "higiene", label: "Higiene íntima", tagline: "Cuidado y bienestar personal", accent_color: "#22d3ee", sort_order: 7 },
-    { id: "dilatadores-desensibilizantes", label: "Dilatadores y desensibilizantes", tagline: "Progresión y control para mayor comodidad", accent_color: "#a78bfa", sort_order: 8 },
-    { id: "otros", label: "Otros", tagline: "Accesorios y productos especiales", accent_color: "#a855f7", sort_order: 9 },
+    { id: "sen-intimo", label: "Sen íntimo", tagline: "Cosméticos íntimos con efectos únicos", accent_color: "#9b2fd4", sort_order: 4 },
+    { id: "cuidado-intimo", label: "Cuidado íntimo", tagline: "Cuidado y bienestar personal", accent_color: "#22d3ee", sort_order: 5 },
+    { id: "retardantes", label: "Retardantes", tagline: "Prolonga el placer y controla tus sensaciones", accent_color: "#ff2d95", sort_order: 6 },
+    { id: "juguetes-hombres", label: "Juguetes para hombres", tagline: "Placer pensado para él", accent_color: "#38bdf8", sort_order: 7 },
+    { id: "juguetes-mujeres", label: "Juguetes para mujeres", tagline: "Placer pensado para ella", accent_color: "#ff2d95", sort_order: 8 },
+    { id: "potenciadores-femeninos", label: "Potenciadores femeninos", tagline: "Deseo, lubricación y más placer", accent_color: "#e879f9", sort_order: 9 },
+    { id: "potenciadores-masculinos", label: "Potenciadores masculinos", tagline: "Más rendimiento, más confianza", accent_color: "#a855f7", sort_order: 10 },
+    { id: "dilatadores-desensibilizantes", label: "Dilatadores y desensibilizantes", tagline: "Progresión y control para mayor comodidad", accent_color: "#a78bfa", sort_order: 11 },
+    { id: "sadomasoquismo", label: "Sadomasoquismo", tagline: "Bondage, control y exploración", accent_color: "#f43f5e", sort_order: 12 },
+    { id: "otros", label: "Otros productos", tagline: "Accesorios y productos especiales", accent_color: "#a855f7", sort_order: 13 },
   ];
 
   const { error } = await supabase.from("categories").upsert(categories, { onConflict: "id" });

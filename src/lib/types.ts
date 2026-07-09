@@ -1,12 +1,16 @@
 export type CatalogCategoryId =
-  | "juguetes"
-  | "sen-intimo"
-  | "lubricantes"
-  | "retardantes"
-  | "estimulantes"
   | "lenceria"
-  | "higiene"
+  | "disfraces"
+  | "lubricantes"
+  | "sen-intimo"
+  | "cuidado-intimo"
+  | "retardantes"
+  | "juguetes-hombres"
+  | "juguetes-mujeres"
+  | "potenciadores-femeninos"
+  | "potenciadores-masculinos"
   | "dilatadores-desensibilizantes"
+  | "sadomasoquismo"
   | "otros";
 
 export interface CatalogItemSize {
