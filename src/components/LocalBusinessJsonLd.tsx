@@ -23,14 +23,15 @@ export function LocalBusinessJsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 4.3942,
-      longitude: -76.0715,
+      latitude: BUSINESS.latitude,
+      longitude: BUSINESS.longitude,
     },
     areaServed: {
       "@type": "City",
       name: "Zarzal",
     },
-    sameAs: [BUSINESS.instagram],
+    hasMap: BUSINESS.mapsUrl,
+    sameAs: [BUSINESS.instagram, BUSINESS.mapsUrl],
   };
 
   return (

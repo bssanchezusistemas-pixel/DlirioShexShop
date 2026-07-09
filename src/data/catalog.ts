@@ -51,9 +51,13 @@ export const BUSINESS = {
   instagram: "https://www.instagram.com/delirioxsexshop/",
   deliveryNote: "Domicilios gratis en Zarzal",
   hours: "Consultar horario por WhatsApp",
-  mapsQuery: "Carrera 8 #7-27, Zarzal, Valle del Cauca, Colombia",
+  /** Perfil de Google Business / Maps de la tienda */
+  mapsUrl: "https://maps.app.goo.gl/UthQrPuKLnv5T7y67",
+  mapsQuery: "DlirioShexShop, Zarzal, Valle del Cauca",
   mapsEmbed:
-    "https://maps.google.com/maps?q=Carrera+8+%237-27+Zarzal+Valle+del+Cauca&t=&z=17&ie=UTF8&iwloc=&output=embed",
+    "https://www.google.com/maps?cid=7982407492946917755&output=embed",
+  latitude: 4.392338,
+  longitude: -76.072052,
 };
 
 export const CATALOG_CATEGORIES: CatalogCategory[] = [

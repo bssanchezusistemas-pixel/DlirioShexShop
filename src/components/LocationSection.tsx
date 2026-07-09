@@ -30,7 +30,7 @@ export function LocationSection() {
     return () => ctx.revert();
   }, []);
 
-  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(BUSINESS.mapsQuery)}`;
+  const mapsLink = BUSINESS.mapsUrl;
   const whatsappDisplay = "322 831 9402";
 
   return (
