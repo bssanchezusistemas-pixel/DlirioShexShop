@@ -1,235 +1,22 @@
 {
   "products": [
     {
-      "id": "retardex-cerotabu",
-      "name": "Retardex Cerotabú",
-      "price": 8000,
-      "category_id": "retardantes",
-      "description": "Retardante 5 g. Prolonga tus momentos de placer y controla tus sensaciones. Ingredientes naturales que relajan y retrasan los impulsos nerviosos.",
-      "stock": 10,
-      "image": "retardex-cerotabu.png"
-    },
-    {
-      "id": "rhino-5ml",
-      "name": "Rhino 5 ml",
-      "price": 18000,
-      "category_id": "retardantes",
-      "description": "Spray retardante 5 ml. Nueva presentación, traído directamente desde Egipto. Producto 100% eficaz para prolongar el placer.",
-      "stock": 10,
-      "image": "rhino-5ml.png"
-    },
-    {
-      "id": "maxman-edicion-especial",
-      "name": "Maxman Edición Especial",
-      "price": 8000,
-      "category_id": "retardantes",
-      "description": "Suplemento ultra-long. Erecciones más potentes y duraderas, mayor resistencia sexual, control de eyaculación precoz y mejor circulación. Sin efecto rebote.",
-      "stock": 10,
-      "image": "maxman-edicion-especial.png"
-    },
-    {
-      "id": "retardante-rhino-crema",
-      "name": "Retardante Rhino (crema)",
-      "price": 12000,
-      "category_id": "retardantes",
-      "description": "Crema retardante de aplicación tópica. Prolonga el placer y ayuda a controlar la eyaculación. Presentación compacta con estuche.",
-      "stock": 10,
-      "image": "retardante-rhino-crema.png"
-    },
-    {
-      "id": "rhino-khartit-tubo",
-      "name": "Crema Rhino Khartit — tubo",
-      "price": 18000,
-      "category_id": "retardantes",
-      "description": "Crema retardante en tubo con estuche. Marca Rhino/Khartit, fórmula importada. Prolonga el placer y ayuda a controlar la eyaculación. Presentación tubo + caja.",
-      "stock": 10,
-      "image": "rhino-khartit-tubo.png"
-    },
-    {
-      "id": "dynamo-ultra-black-power-15ml",
-      "name": "Dynamo Ultra Black Power — Spray retardante",
-      "price": 40000,
-      "category_id": "retardantes",
-      "description": "Spray retardante para hombre. Línea Black Power. Prolonga el placer y ayuda a controlar la eyaculación. Presentación 15 ml con estuche. Ref: Ref05040.",
-      "stock": 10,
-      "image": "dynamo-ultra-black-power-15ml.png"
-    },
-    {
-      "id": "jamaican-stone",
-      "name": "Jamaican Stone",
-      "price": 15000,
-      "category_id": "retardantes",
-      "description": "Retardante natural en piedra tópica. Frotar la piedra con 3 gotas de agua durante 30 segundos hasta obtener un líquido lechoso; aplicar en el surco balano prepucial durante 15 minutos y luego lavar con agua y jabón. Advertencia: no exceder el tiempo ni la cantidad indicada.",
-      "stock": 10,
-      "image": "jamaican-stone.png"
-    },
-    {
-      "id": "sen-lub-neutro-30ml",
-      "name": "Lubricante íntimo Neutro 30 ml",
-      "price": 22000,
-      "category_id": "sen-intimo",
-      "description": "Hipoalergénico, pH equilibrado. Lubricación suave, duradera y confortable. Compatible con condones y juguetes. Previene resequedad vaginal, reduce fricción, previene irritaciones.",
-      "stock": 10,
-      "image": "sen-lub-neutro-30ml.png"
-    },
-    {
-      "id": "sen-lub-neutro-1l",
-      "name": "Lubricante íntimo Neutro 1 L — SEN ÍNTIMO",
-      "price": 65000,
-      "category_id": "sen-intimo",
-      "description": "Lubricante íntimo a base de agua, pH balanceado, ideal para uso diario. Lubricación suave y duradera. Compatible con condones y juguetes. Previene resequedad vaginal y reduce fricción. Presentación 1 L. Fábrica del Placer / SEN ÍNTIMO.",
-      "stock": 10,
-      "image": "sen-lub-neutro-1l.png"
-    },
-    {
-      "id": "sen-lub-menta-fria-30ml",
-      "name": "Lubricante íntimo Menta 30 ml — Edición Especial",
-      "price": 25000,
-      "category_id": "sen-intimo",
-      "description": "SEN ÍNTIMO Edición Especial, 30 ml. Sensación fría con sabor menta. Seguro con preservativo. A base de agua, sedoso y suave al tacto. Fácil de lavar, no deja residuos ni manchas. Compatible con condones y juguetes. Registro INVIMA 2022DM-0024284.",
-      "stock": 10,
-      "image": "sen-lub-menta-fria-30ml.png"
-    },
-    {
-      "id": "sen-lub-sensacion-caliente-30ml",
-      "name": "Lubricante íntimo Sensación Caliente 30 ml",
-      "category_id": "sen-intimo",
-      "description": "SEN ÍNTIMO. Lubricante íntimo con sensación caliente. A base de agua, compatible con condones y juguetes. Presentación 30 ml. Sabores disponibles.",
-      "stock": 10,
-      "sizes": [
-        {
-          "label": "Chocolate",
-          "price": 25000,
-          "image": "/catalog/sen-lub-sensacion-caliente-30ml-chocolate.webp"
-        },
-        {
-          "label": "Crema de whisky",
-          "price": 25000,
-          "image": "/catalog/sen-lub-sensacion-caliente-30ml-crema-whisky.webp"
-        },
-        {
-          "label": "Caramelo",
-          "price": 25000,
-          "image": "/catalog/sen-lub-sensacion-caliente-30ml-caramelo.webp"
-        },
-        {
-          "label": "Café Moka",
-          "price": 25000,
-          "image": "/catalog/sen-lub-sensacion-caliente-30ml-cafe-moka.webp"
-        }
-      ],
-      "image": "sen-lub-sensacion-caliente-30ml.png"
-    },
-    {
-      "id": "sen-vibrador-liquido-electrizante-frio-5ml",
-      "name": "Vibrador líquido Electrizante Frío",
-      "price": 39000,
-      "category_id": "sen-intimo",
-      "description": "Gel vibrador líquido con sensación electrizante y fría. Potente, excitante e inolvidable. Aplicar pocas gotas. Contenido 5 ml.",
-      "stock": 10,
-      "image": "sen-vibrador-liquido-electrizante-frio-5ml.png"
-    },
-    {
       "id": "gummies-viking-cereza-60g",
       "name": "Ropa íntima comestible Gummies Viking — Cereza",
-      "price": 35000,
       "category_id": "lenceria",
       "description": "Lencería comestible en gomas sabor cereza/frutas. Producto divertido para parejas. Peso neto 60 g. Ref: Ref03525.",
       "stock": 10,
-      "image": "gummies-viking-cereza-60g.png"
+      "price": 35000,
+      "image_url": "/catalog/gummies-viking-cereza-60g.webp"
     },
     {
-      "id": "big-penis-honey",
-      "name": "Big Penis Honey",
-      "category_id": "potenciadores-masculinos",
-      "description": "Estimulante sexual masculino 100% natural. Ginseng, maca, miel y hierbas seleccionadas. Paquete con 12 sobres de 15 g. Tomar 1 sobre diluido en agua 30 min antes.",
+      "id": "ropa-comestible-gummies-viking-cherry",
+      "name": "Ropa íntima comestible Gummies Viking Cherry 60 g",
+      "category_id": "lenceria",
+      "description": "Lencería comestible elaborada en dulce gomita sabor a cereza/frutas. Peso neto 60 g. Diseñada para juegos sensuales en pareja.",
       "stock": 10,
-      "sizes": [
-        {
-          "label": "Paquete x12 sobres",
-          "price": 18000
-        },
-        {
-          "label": "Sobre individual",
-          "price": 7000
-        }
-      ],
-      "image": "big-penis-honey.png"
-    },
-    {
-      "id": "gold-fly-original",
-      "name": "Original GOLD FLY™",
-      "price": 12000,
-      "category_id": "potenciadores-femeninos",
-      "description": "Afrodisíaco potente en sobres. Mejora el deseo y la sensibilidad, aumenta el placer y la excitación. Extracto natural de animales y plantas.",
-      "stock": 10,
-      "image": "gold-fly-original.png"
-    },
-    {
-      "id": "firefox-women-series",
-      "name": "Firefox Women Series",
-      "price": 10000,
-      "category_id": "potenciadores-femeninos",
-      "description": "Estimulante sexual femenino en sobres. Línea Women Series. Despierta tu deseo. Bacchus Biotechnology.",
-      "stock": 10,
-      "image": "firefox-women-series.png",
-      "badge": "Nuevo"
-    },
-    {
-      "id": "firefox-women-supplement-5g",
-      "name": "Firefox Women Supplement — Sobre 5 g",
-      "price": 12000,
-      "category_id": "potenciadores-femeninos",
-      "description": "Estimulante femenino en sobre 5 g. Polvo incoloro e inodoro. Bacchus Biotechnology. Aumenta el deseo, excita rápido, mejora la lubricación, efecto multiorgásmico. Compatible con líquidos y alcohol.",
-      "stock": 10,
-      "image": "firefox-women-supplement-5g.png"
-    },
-    {
-      "id": "groben-penis-gold",
-      "name": "Groben Penis Gold",
-      "price": 10000,
-      "category_id": "potenciadores-masculinos",
-      "description": "Estimulante masculino en sobre/pasta. 100% natural, compatible con licor. Potencializa la erección y retarda la eyaculación. Hasta 6 días como un toro.",
-      "stock": 10,
-      "image": "groben-penis-gold.png",
-      "badge": "Nuevo"
-    },
-    {
-      "id": "groben-penis-silver",
-      "name": "Groben Penis Silver",
-      "price": 10000,
-      "category_id": "potenciadores-masculinos",
-      "description": "Estimulante masculino en sobre plateado. Erección consistente, aumenta sensibilidad y apetito sexual, incrementa duración de erección y más confianza sexual. 100% natural, no adictivo. Apto para hipertensión y diabetes (según empaque).",
-      "stock": 10,
-      "image": "groben-penis-silver.png",
-      "badge": "Nuevo"
-    },
-    {
-      "id": "groben-penis-fem",
-      "name": "Groben Penis Fem — Potenciador femenino",
-      "price": 10000,
-      "category_id": "potenciadores-femeninos",
-      "description": "Potenciador femenino en cápsula. Aumenta el apetito sexual, mejora la lubricación y la excitación. Efecto multiorgásmico. Presentación: 1 cápsula. Tomar 1 cápsula 1 hora antes. Compatible con licor.",
-      "stock": 10,
-      "image": "groben-penis-fem.png"
-    },
-    {
-      "id": "groben-penis-maxxx",
-      "name": "Groben Penis MAXXX",
-      "price": 10000,
-      "category_id": "potenciadores-masculinos",
-      "description": "Estimulante sexual masculino en sobre naranja. Efecto prolongado de 4 a 5 días por estimulación. 100% natural, compatible con licor. Potencializa la erección, retarda la eyaculación y promueve engrosamiento. Excelente para diabéticos (según empaque). Hasta 5 días como un rey.",
-      "stock": 10,
-      "image": "groben-penis-maxxx.png"
-    },
-    {
-      "id": "sexlove-plus-chewing-gum",
-      "name": "Sexlove+ Chewing Gum — Chiclet estimulante femenino",
-      "price": 12000,
-      "category_id": "potenciadores-femeninos",
-      "description": "Chiclet estimulante sexual femenino, sabor frutas. Aumenta la libido y el deseo sexual. Efecto desde 40 minutos, dura aproximadamente 2 horas. Compatible con licor. Se mastica como un chicle normal.",
-      "stock": 10,
-      "image": "sexlove-plus-chewing-gum.png"
+      "price": 35000,
+      "image_url": "/catalog/ropa-comestible-gummies-viking-cherry.webp"
     },
     {
       "id": "dsex-hot-oil-30ml",
@@ -275,43 +62,134 @@
           "price": 15000
         }
       ],
-      "image": "dsex-hot-oil-30ml.png"
+      "image_url": "/catalog/dsex-hot-oil-30ml.webp"
     },
     {
-      "id": "vib-huevo-control-remoto",
-      "name": "Vibrador huevo con control remoto",
-      "price": 100000,
-      "category_id": "juguetes-mujeres",
-      "description": "Huevo vibrador rosa con control remoto inalámbrico. Diseño discreto, textura suave, cordón de extracción. Ideal para estimulación interna y externa.",
+      "id": "ball-exotic-perlas-explosivas-x2",
+      "name": "Perlas lubricantes explosivas Forsexy Ball Exotic x2",
+      "category_id": "lubricantes",
+      "description": "Perlas de masaje Forsexy Ball Exotic que estallan al frotar liberando un aceite lubricante térmico aromático de sensaciones placenteras.",
       "stock": 10,
-      "image": "vib-huevo-control-remoto.png",
-      "badge": "Nuevo"
+      "price": 25000,
+      "image_url": "/catalog/ball-exotic-perlas-explosivas-x2.webp"
     },
     {
-      "id": "malawy-029-consolador",
-      "name": "Consolador Malawy 029",
-      "price": 60000,
-      "category_id": "juguetes-mujeres",
-      "description": "Consolador con funda transparente texturizada, núcleo interno y base negra. Modelo Malawy 029. Estimulación intensa, material suave. Incluye empaque.",
+      "id": "sen-lub-neutro-30ml",
+      "name": "Lubricante íntimo Neutro 30 ml",
+      "category_id": "sen-intimo",
+      "description": "Hipoalergénico, pH equilibrado. Lubricación suave, duradera y confortable. Compatible con preservativos y accesorios. Previene resequedad, reduce fricción.",
       "stock": 10,
-      "image": "malawy-029-consolador.png",
-      "badge": "Nuevo"
+      "price": 22000,
+      "image_url": "/catalog/sen-lub-neutro-30ml.webp"
     },
     {
-      "id": "plug-anal-corazon-rosa",
-      "name": "Plug anal corazón rosa con gema",
-      "price": 45000,
-      "category_id": "juguetes-mujeres",
-      "description": "Plug anal rosa perla con base en forma de corazón y gema rosa facetada. Material metálico/acrílico brillante. Diseño elegante para principiantes o uso decorativo.",
+      "id": "sen-lub-neutro-1l",
+      "name": "Lubricante íntimo Neutro 1 L — SEN ÍNTIMO",
+      "category_id": "sen-intimo",
+      "description": "Lubricante íntimo a base de agua, pH balanceado, ideal para uso frecuente. Lubricación suave y duradera. Compatible con preservativos y accesorios. Presentación 1 L. Fábrica del Placer / SEN ÍNTIMO.",
       "stock": 10,
-      "image": "plug-anal-corazon-rosa.png",
-      "badge": "Nuevo"
+      "price": 65000,
+      "image_url": "/catalog/sen-lub-neutro-1l.webp"
+    },
+    {
+      "id": "sen-lub-menta-fria-30ml",
+      "name": "Lubricante íntimo Menta 30 ml — Edición Especial",
+      "category_id": "sen-intimo",
+      "description": "SEN ÍNTIMO Edición Especial, 30 ml. Sensación fría con sabor menta. Seguro con preservativo. A base de agua, sedoso y suave al tacto. Fácil de lavar, no deja residuos ni manchas.",
+      "stock": 10,
+      "price": 25000,
+      "image_url": "/catalog/sen-lub-menta-fria-30ml.webp"
+    },
+    {
+      "id": "sen-lub-sensacion-caliente-30ml",
+      "name": "Lubricante íntimo Sensación Caliente 30 ml",
+      "category_id": "sen-intimo",
+      "description": "SEN ÍNTIMO. Lubricante íntimo con sensación caliente. A base de agua, compatible con preservativos y accesorios. Presentación 30 ml. Sabores disponibles.",
+      "stock": 10,
+      "sizes": [
+        {
+          "label": "Chocolate",
+          "price": 25000,
+          "image": "/catalog/sen-lub-sensacion-caliente-30ml-chocolate.webp"
+        },
+        {
+          "label": "Crema de whisky",
+          "price": 25000,
+          "image": "/catalog/sen-lub-sensacion-caliente-30ml-crema-whisky.webp"
+        },
+        {
+          "label": "Caramelo",
+          "price": 25000,
+          "image": "/catalog/sen-lub-sensacion-caliente-30ml-caramelo.webp"
+        },
+        {
+          "label": "Café Moka",
+          "price": 25000,
+          "image": "/catalog/sen-lub-sensacion-caliente-30ml-cafe-moka.webp"
+        }
+      ],
+      "image_url": "/catalog/sen-lub-sensacion-caliente-30ml-chocolate.webp"
+    },
+    {
+      "id": "sen-vibrador-liquido-electrizante-frio-5ml",
+      "name": "Vibrador líquido Electrizante Frío",
+      "category_id": "sen-intimo",
+      "description": "Gel vibrador líquido con sensación electrizante y fría. Efecto potente e inolvidable. Aplicar pocas gotas. Contenido 5 ml.",
+      "stock": 10,
+      "price": 39000,
+      "image_url": "/catalog/sen-vibrador-liquido-electrizante-frio-5ml.webp"
+    },
+    {
+      "id": "sen-lub-cum-250ml",
+      "name": "Lubricante íntimo CUM — SEN ÍNTIMO",
+      "category_id": "sen-intimo",
+      "description": "Lubricante íntimo SEN ÍNTIMO línea CUM. Simula la eyaculación femenina. A base de agua, compatible con preservativos y accesorios. Presentación 250 ml con dispensador.",
+      "stock": 10,
+      "price": 50000,
+      "image_url": "/catalog/sen-lub-cum-250ml.webp"
+    },
+    {
+      "id": "sen-lub-estrechante-30ml",
+      "name": "Lubricante íntimo Estrechante — SEN ÍNTIMO",
+      "category_id": "sen-intimo",
+      "description": "Lubricante estrechante SEN ÍNTIMO. Tratamiento progresivo que devuelve la seguridad. Sensación de contracción para mayor contacto íntimo. Presentación 30 ml.",
+      "stock": 10,
+      "price": 39000,
+      "image_url": "/catalog/sen-lub-estrechante-30ml.webp"
+    },
+    {
+      "id": "sen-aceite-aromaterapia-masajes-250ml",
+      "name": "Aceite corporal con feromonas para masajes — SEN ÍNTIMO 250 ml",
+      "category_id": "sen-intimo",
+      "description": "Aceite corporal para masajes y aromaterapia erótica con feromonas. Presentación de 250 ml con dispensador spray. Textura sedosa de fácil deslizamiento.",
+      "stock": 10,
+      "price": 50000,
+      "badge": "250 ml",
+      "image_url": "/catalog/sen-aceite-aromaterapia-masajes-250ml.webp"
+    },
+    {
+      "id": "sen-lub-cum-sensitive-250ml",
+      "name": "Lubricante íntimo CUM Sensitive 250 ml — SEN ÍNTIMO",
+      "category_id": "sen-intimo",
+      "description": "Lubricante íntimo a base de agua que simula la eyaculación femenina. Ultra sedoso, cambia de color al frotarlo y cuenta con agradable sabor. Presentación 250 ml con dosificador.",
+      "stock": 10,
+      "price": 50000,
+      "image_url": "/catalog/sen-lub-cum-sensitive-250ml.webp"
+    },
+    {
+      "id": "sen-anillo-vibrador-masajeador",
+      "name": "Anillo vibrador masajeador personal — SEN ÍNTIMO",
+      "category_id": "sen-intimo",
+      "description": "Anillo vibrador reutilizable Sen Íntimo en silicona elástica suave. Prolonga la erección, retarda la eyaculación y estimula a la pareja.",
+      "stock": 10,
+      "price": 25000,
+      "image_url": "/catalog/sen-anillo-vibrador-masajeador.webp"
     },
     {
       "id": "cerotabu-adonis-ducha-anal",
       "name": "Cerotabú Adonis — Ducha anal",
       "category_id": "cuidado-intimo",
-      "description": "Ducha anal y vaginal unisex. Silicona médica de alta calidad, libre de ftalatos. Capacidad 220 ml. Desarmable para fácil limpieza. Marca Cerotabú / Roky.",
+      "description": "Ducha higiénica unisex. Silicona médica de alta calidad. Capacidad 220 ml. Desarmable para fácil limpieza. Marca Cerotabú / Roky.",
       "stock": 10,
       "sizes": [
         {
@@ -327,86 +205,705 @@
           "price": 35000
         }
       ],
-      "image": "cerotabu-adonis-ducha-anal.png"
+      "image_url": "/catalog/cerotabu-adonis-ducha-anal.webp"
+    },
+    {
+      "id": "sen-despigmentante-intimo-60ml",
+      "name": "Despigmentante y aclarador íntimo 60 ml — SEN ÍNTIMO",
+      "category_id": "cuidado-intimo",
+      "description": "Tratamiento despigmentante para zonas íntimas, axilas y entrepierna. Aclara y homogeneiza el tono natural de la piel. Registro NSOC09879-21CO.",
+      "stock": 10,
+      "price": 50000,
+      "badge": "60 ml",
+      "image_url": "/catalog/sen-despigmentante-intimo-60ml.webp"
+    },
+    {
+      "id": "ducha-enema-anal-silicona",
+      "name": "Ducha higiénica para enema anal en silicona médica",
+      "category_id": "cuidado-intimo",
+      "description": "Perilla para enema rectal y vaginal elaborada en silicona higiénica flexible con cánula suave desmontable.",
+      "stock": 10,
+      "sizes": [
+        {
+          "label": "Talla S (89 ml)",
+          "price": 25000
+        },
+        {
+          "label": "Talla M (160 ml)",
+          "price": 32000
+        },
+        {
+          "label": "Talla L (224 ml)",
+          "price": 40000
+        }
+      ],
+      "image_url": "/catalog/ducha-enema-anal-silicona.webp"
+    },
+    {
+      "id": "truly-aceite-post-afeitado-aclarador",
+      "name": "Aceite post-depilación y suavizante íntimo Truly",
+      "category_id": "cuidado-intimo",
+      "description": "Aceite botánico corporal post-afeitado Truly (Soft Serve / Unicorn Fruit). Ayuda a calmar, nutrir y mantener la piel suave e hidratada.",
+      "stock": 10,
+      "price": 40000,
+      "image_url": "/catalog/truly-aceite-post-afeitado-aclarador.webp"
+    },
+    {
+      "id": "splash-intimo-feromonas-seduction-125ml",
+      "name": "Splash íntimo con feromonas Seduction 125 ml",
+      "category_id": "cuidado-intimo",
+      "description": "Splash corporal e íntimo con feromonas Seduction 125 ml. Apto para la zona íntima, no altera el pH, aporta frescura, seguridad y aroma seductor.",
+      "stock": 10,
+      "price": 20000,
+      "badge": "125 ml",
+      "image_url": "/catalog/splash-intimo-feromonas-seduction-125ml.webp"
+    },
+    {
+      "id": "retardex-cerotabu",
+      "name": "Retardex Cerotabú",
+      "category_id": "retardantes",
+      "description": "Retardante 5 g. Prolonga tus momentos y controla tus sensaciones. Ingredientes naturales que relajan y retrasan los impulsos.",
+      "stock": 10,
+      "price": 8000,
+      "image_url": "/catalog/retardex-cerotabu.webp"
+    },
+    {
+      "id": "rhino-5ml",
+      "name": "Rhino 5 ml",
+      "category_id": "retardantes",
+      "description": "Spray retardante 5 ml. Fórmula importada de alta eficacia para prolongar el encuentro.",
+      "stock": 10,
+      "price": 18000,
+      "image_url": "/catalog/rhino-5ml.webp"
+    },
+    {
+      "id": "maxman-edicion-especial",
+      "name": "Maxman Edición Especial",
+      "category_id": "retardantes",
+      "description": "Suplemento ultra-long. Mayor resistencia, control de eyaculación y vigor sostenido.",
+      "stock": 10,
+      "price": 8000,
+      "image_url": "/catalog/maxman-edicion-especial.webp"
+    },
+    {
+      "id": "retardante-rhino-crema",
+      "name": "Retardante Rhino (crema)",
+      "category_id": "retardantes",
+      "description": "Crema retardante de aplicación tópica. Prolonga el encuentro y ayuda al control íntimo.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/retardante-rhino-crema.webp"
+    },
+    {
+      "id": "rhino-khartit-tubo",
+      "name": "Crema Rhino Khartit — tubo",
+      "category_id": "retardantes",
+      "description": "Crema retardante en tubo con estuche. Marca Rhino/Khartit, fórmula importada. Prolonga el rendimiento íntimo.",
+      "stock": 10,
+      "price": 18000,
+      "image_url": "/catalog/rhino-khartit-tubo.webp"
+    },
+    {
+      "id": "dynamo-ultra-black-power-15ml",
+      "name": "Dynamo Ultra Black Power — Spray retardante",
+      "category_id": "retardantes",
+      "description": "Spray retardante masculino. Línea Black Power. Prolonga el rendimiento y ayuda al control íntimo. Presentación 15 ml con estuche.",
+      "stock": 10,
+      "price": 40000,
+      "image_url": "/catalog/dynamo-ultra-black-power-15ml.webp"
+    },
+    {
+      "id": "jamaican-stone",
+      "name": "Jamaican Stone",
+      "category_id": "retardantes",
+      "description": "Retardante tradicional en piedra tópica. Frotar con gotas de agua y aplicar suavemente para prolongar la duración.",
+      "stock": 10,
+      "price": 15000,
+      "image_url": "/catalog/jamaican-stone.webp"
+    },
+    {
+      "id": "piedra-jamaiquina-original",
+      "name": "Piedra Jamaiquina tradicional original",
+      "category_id": "retardantes",
+      "description": "Piedra retardante natural de origen tradicional. Se disuelve con unas gotas de agua formando una emulsión tópica para prolongar la relación íntima.",
+      "stock": 10,
+      "price": 15000,
+      "image_url": "/catalog/piedra-jamaiquina-original.webp"
+    },
+    {
+      "id": "retardex-crema-tradicional-tarro",
+      "name": "Crema retardante Retardex tradicional",
+      "category_id": "retardantes",
+      "description": "Crema retardante clásica en práctico tarro con estuche dorado. Fórmula tópica para prolongar el rendimiento y control íntimo.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/retardex-crema-tradicional-tarro.webp"
+    },
+    {
+      "id": "rhino-cannabis-spray-retardante",
+      "name": "Spray retardante Rhino Cannabis",
+      "category_id": "retardantes",
+      "description": "Spray retardante masculino con extracto de cannabis para máxima relajación tópica y control eyaculatorio.",
+      "stock": 10,
+      "price": 18000,
+      "image_url": "/catalog/rhino-cannabis-spray-retardante.webp"
+    },
+    {
+      "id": "rhino-retardante-masculino-crema-tarro",
+      "name": "Crema retardante Rhino Original estuche negro",
+      "category_id": "retardantes",
+      "description": "Crema retardante masculina Rhino en pote con estuche. De rápida acción tópica para prolongar la relación íntima.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/rhino-retardante-masculino-crema-tarro.webp"
+    },
+    {
+      "id": "stud-ejaculation-delay-spray-15ml",
+      "name": "Spray retardante Stud Ejaculation Delay Black Power 15 ml",
+      "category_id": "retardantes",
+      "description": "Spray retardante masculino premium Stud Delay línea Black Power de 15 ml para control y mayor duración en la intimidad.",
+      "stock": 10,
+      "price": 45000,
+      "image_url": "/catalog/stud-ejaculation-delay-spray-15ml.webp"
+    },
+    {
+      "id": "rhino-dorado-spray-al-khartit",
+      "name": "Spray retardante Rhino Dorado Al Khartit",
+      "category_id": "retardantes",
+      "description": "Spray retardante Rhino Cairo edición dorada. Aplicación rápida de 2 a 3 pulverizaciones sin dejar residuos ni sensación pegajosa.",
+      "stock": 10,
+      "price": 18000,
+      "image_url": "/catalog/rhino-dorado-spray-al-khartit.webp"
+    },
+    {
+      "id": "retardex-cerotabu-crema-5g-12k",
+      "name": "Retardante Retardex Cerotabú crema 5 g",
+      "category_id": "retardantes",
+      "description": "Retardante Retardex Cerotabú de 5 g con ingredientes naturales que ayudan a equilibrar la sensibilidad y prolongar el placer.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/retardex-cerotabu-crema-5g-12k.webp"
     },
     {
       "id": "men-powerup-penis-pump",
-      "name": "Agrandador de pene — Men Powerup",
-      "price": 70000,
+      "name": "Agrandador de succión — Men Powerup",
       "category_id": "juguetes-hombres",
-      "description": "Cilindro en ABS para engrosar y alargar el pene. Bomba manual con manguera. Cilindro 220 mm × 65 mm. Marcas M, L y XL en el interior. Ref: RL35BA01-302. Producto +18.",
+      "description": "Cilindro en ABS con marcas graduadas. Bomba manual con manguera flexible. Cilindro 220 mm × 65 mm. Producto +18.",
       "stock": 10,
-      "image": "men-powerup-penis-pump.png",
-      "badge": "+18"
+      "price": 70000,
+      "badge": "+18",
+      "image_url": "/catalog/men-powerup-penis-pump.webp"
     },
     {
-      "id": "kit-bondage-10-piezas",
-      "name": "Kit bondage 10 piezas",
-      "price": 30000,
-      "category_id": "sadomasoquismo",
-      "description": "Set completo para parejas: esposas ajustables, antifaz, mordaza, flogger, pluma, cuerda, collar con correa, pinzas y conectores. Material negro con herrajes plateados. Ideal para iniciación.",
+      "id": "bomba-vacio-alargadora-hombre-80k",
+      "name": "Bomba de vacío y cilindro de succión para hombre",
+      "category_id": "juguetes-hombres",
+      "description": "Cilindro transparente graduado de 220 mm x 65 mm en ABS resistente con manguera flexible y mango ergonómico de succión manual.",
       "stock": 10,
-      "image": "kit-bondage-10-piezas.png",
-      "badge": "Nuevo"
+      "price": 80000,
+      "badge": "+18",
+      "image_url": "/catalog/bomba-vacio-alargadora-hombre-80k.webp"
     },
     {
-      "id": "set-bondage-anti-back-handcuffs",
-      "name": "Set bondage Anti-Back Handcuffs",
-      "price": 45000,
-      "category_id": "sadomasoquismo",
-      "description": "Arnés de bondage con collar acolchado en piel sintética, esposas para muñecas y correas ajustables. Sujeta las manos a la espalda. Incluye empaque. Role play para parejas.",
+      "id": "anillo-vibrador-basico",
+      "name": "Anillo vibrador eréctil básico con textura",
+      "category_id": "juguetes-hombres",
+      "description": "Anillo erector en silicona flexible con protuberancias estimulantes y micro vibrador superior para disfrute mutuo en pareja.",
       "stock": 10,
-      "image": "set-bondage-anti-back-handcuffs.png",
-      "badge": "Nuevo"
+      "price": 15000,
+      "image_url": "/catalog/anillo-vibrador-basico.webp"
+    },
+    {
+      "id": "vibrador-anal-doble-prostatico-10-modos",
+      "name": "Vibrador anal prostático y perineal — 10 modos",
+      "category_id": "juguetes-hombres",
+      "description": "Estimulador prostático ergonómico con curva anatómica, textura de bolas y 10 patrones de vibración independiente.",
+      "stock": 10,
+      "price": 55000,
+      "image_url": "/catalog/vibrador-anal-doble-prostatico-10-modos.webp"
+    },
+    {
+      "id": "vib-huevo-control-remoto",
+      "name": "Vibrador huevo con control remoto",
+      "category_id": "juguetes-mujeres",
+      "description": "Huevo vibrador rosa con control remoto inalámbrico. Diseño discreto, textura suave, cordón de extracción. Estimulación versátil.",
+      "stock": 10,
+      "price": 100000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/vib-huevo-control-remoto.webp"
     },
     {
       "id": "private-massager-control-remoto",
       "name": "Private Massager — Vibrador con control remoto",
-      "price": 90000,
       "category_id": "juguetes-mujeres",
-      "description": "Vibrador huevo en silicona con control remoto inalámbrico. 18 funciones de vibración, impermeable, silencioso. Recargable por USB. Incluye cable de carga y empaque.",
+      "description": "Vibrador huevo en silicona con control remoto inalámbrico. 18 funciones de vibración, impermeable, silencioso. Recargable por USB.",
       "stock": 10,
-      "image": "private-massager-control-remoto.png",
-      "badge": "Nuevo"
+      "price": 90000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/private-massager-control-remoto.webp"
     },
     {
       "id": "vibrador-app-smartphone",
       "name": "Vibrador con control por app",
-      "price": 100000,
       "category_id": "juguetes-mujeres",
-      "description": "Huevo vibrador en silicona controlado desde el celular vía app Bluetooth. 9 modos de vibración, impermeable. Modos Classic, Music, Shake y más. Recargable.",
+      "description": "Huevo vibrador en silicona controlado desde el celular vía app Bluetooth. 9 modos de vibración, impermeable. Recargable.",
       "stock": 10,
-      "image": "vibrador-app-smartphone.png",
-      "badge": "Nuevo"
+      "price": 100000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/vibrador-app-smartphone.webp"
     },
     {
       "id": "mini-bullet-vibrator",
       "name": "Mini Bullet Vibrator — Vibrador bala",
-      "price": 70000,
       "category_id": "juguetes-mujeres",
-      "description": "Vibrador bala compacto en acabado cromado. 10 modos de vibración, impermeable, silencioso. Recargable por USB. Tamaño mini, ideal para llevar.",
+      "description": "Vibrador bala compacto en acabado cromado. 10 modos de vibración, impermeable, silencioso. Recargable por USB.",
       "stock": 10,
-      "image": "mini-bullet-vibrator.png",
-      "badge": "Nuevo"
+      "price": 70000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/mini-bullet-vibrator.webp"
     },
     {
-      "id": "sen-lub-cum-250ml",
-      "name": "Lubricante íntimo CUM — SEN ÍNTIMO",
-      "price": 50000,
-      "category_id": "sen-intimo",
-      "description": "Lubricante íntimo SEN ÍNTIMO línea CUM. Simula la eyaculación femenina. A base de agua, compatible con condones y juguetes. Presentación 250 ml con dispensador.",
+      "id": "malawy-029-consolador",
+      "name": "Consolador Malawy 029",
+      "category_id": "juguetes-mujeres",
+      "description": "Consolador con funda transparente texturizada, núcleo interno y base ventosa. Modelo Malawy 029. Estimulación intensa.",
       "stock": 10,
-      "image": "sen-lub-cum-250ml.png",
-      "badge": "Nuevo"
+      "price": 60000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/malawy-029-consolador.webp"
     },
     {
-      "id": "sen-lub-estrechante-30ml",
-      "name": "Lubricante íntimo Estrechante — SEN ÍNTIMO",
-      "price": 39000,
-      "category_id": "sen-intimo",
-      "description": "Lubricante estrechante SEN ÍNTIMO. Tratamiento progresivo que devuelve la seguridad. Sensación de contracción del conducto vaginal para mayor contacto durante la penetración. Aplicar en la entrada vaginal 10 minutos antes de la relación. Presentación 30 ml.",
+      "id": "plug-anal-corazon-rosa",
+      "name": "Plug anal corazón rosa con gema",
+      "category_id": "juguetes-mujeres",
+      "description": "Plug anal en acabado metálico brillante con base en forma de corazón y gema facetada rosa. Diseño elegante.",
       "stock": 10,
-      "image": "sen-lub-estrechante-30ml.png"
+      "price": 45000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/plug-anal-corazon-rosa.webp"
+    },
+    {
+      "id": "vibrador-traslucido-pilas-aaa",
+      "name": "Consolador vibrador traslúcido texturizado a pilas AAA",
+      "category_id": "juguetes-mujeres",
+      "description": "Vibrador texturizado elaborado en material traslúcido flexible con relieves estimulantes. Funciona con pilas AAA y cuenta con regulador giratorio.",
+      "stock": 10,
+      "price": 60000,
+      "image_url": "/catalog/vibrador-traslucido-pilas-aaa.webp"
+    },
+    {
+      "id": "bala-vibradora-recargable-usb-cromada",
+      "name": "Bala vibradora cromada recargable USB",
+      "category_id": "juguetes-mujeres",
+      "description": "Micro bala vibradora en elegante acabado cromado, 10 velocidades y modos de vibración, impermeable, silenciosa y recargable por USB.",
+      "stock": 10,
+      "price": 70000,
+      "image_url": "/catalog/bala-vibradora-recargable-usb-cromada.webp"
+    },
+    {
+      "id": "bala-vibradora-pila-9-modos",
+      "name": "Bala vibradora portátil a pila — 9 modos de vibración",
+      "category_id": "juguetes-mujeres",
+      "description": "Bala vibradora compacta de bolsillo (90 mm x 15 mm) con 9 modos de pulsación intensa. Acabado suave al tacto y botón en la base.",
+      "stock": 10,
+      "price": 35000,
+      "image_url": "/catalog/bala-vibradora-pila-9-modos.webp"
+    },
+    {
+      "id": "vibrador-conejo-doble-estimulacion-rosa",
+      "name": "Vibrador conejo de doble estimulación rosa y blanco",
+      "category_id": "juguetes-mujeres",
+      "description": "Vibrador estilo conejo en silicona sedosa con estimulador de clítoris y cuerpo curvado. Doble motor para estimulación simultánea.",
+      "stock": 10,
+      "price": 90000,
+      "badge": "Popular",
+      "image_url": "/catalog/vibrador-conejo-doble-estimulacion-rosa.webp"
+    },
+    {
+      "id": "mini-wand-vibrador-microfono-recargable",
+      "name": "Mini vibrador masajeador tipo Wand / Micrófono",
+      "category_id": "juguetes-mujeres",
+      "description": "Vibrador estilo varita mágica compacta en silicona fucsia. Cuenta con 8 velocidades y 20 modos de vibración, cabezal flexible y recarga USB.",
+      "stock": 10,
+      "price": 90000,
+      "image_url": "/catalog/mini-wand-vibrador-microfono-recargable.webp"
+    },
+    {
+      "id": "plug-anal-acero-corazon-gema-morada",
+      "name": "Plug anal en acero corazón con gema amatista",
+      "category_id": "juguetes-mujeres",
+      "description": "Plug anal metálico en acero inoxidable con hermosa gema facetada en forma de corazón en la base color morado/amatista.",
+      "stock": 10,
+      "sizes": [
+        {
+          "label": "Talla S",
+          "price": 40000
+        },
+        {
+          "label": "Talla M",
+          "price": 45000
+        }
+      ],
+      "image_url": "/catalog/plug-anal-acero-corazon-gema-morada.webp"
+    },
+    {
+      "id": "bomba-vacio-mujer-pussy-pump",
+      "name": "Bomba de vacío y estimulación íntima Pussy Pump",
+      "category_id": "juguetes-mujeres",
+      "description": "Sistema de succión de vacío con copa transparente y borde de silicona suave diseñado para estimulación y sensibilidad femenina.",
+      "stock": 10,
+      "price": 90000,
+      "image_url": "/catalog/bomba-vacio-mujer-pussy-pump.webp"
+    },
+    {
+      "id": "vibrador-clasico-eco-pila-aa",
+      "name": "Vibrador clásico Eco a pila AA",
+      "category_id": "juguetes-mujeres",
+      "description": "Consolador vibrador clásico con relieve anatómico, base giratoria para ajuste de velocidad. Funciona con 1 pila AA.",
+      "stock": 10,
+      "price": 55000,
+      "image_url": "/catalog/vibrador-clasico-eco-pila-aa.webp"
+    },
+    {
+      "id": "cerotabu-beth-huevo-vibrador-remoto",
+      "name": "Huevo vibrador Cerotabú Beth con control remoto USB",
+      "category_id": "juguetes-mujeres",
+      "description": "Huevo vibrador en silicona suave con control inalámbrico a distancia, múltiples ritmos de estimulación, recargable mediante cable USB.",
+      "stock": 10,
+      "price": 120000,
+      "badge": "Recargable",
+      "image_url": "/catalog/cerotabu-beth-huevo-vibrador-remoto.webp"
+    },
+    {
+      "id": "vibrador-sube-y-baja-telescopico-usb",
+      "name": "Vibrador telescópico sube y baja conejo recargable USB",
+      "category_id": "juguetes-mujeres",
+      "description": "Vibrador estimulador telescópico automático con función de movimiento ascendente y descendente (sube y baja) y orejas estimuladoras en silicona médica recargable por USB.",
+      "stock": 10,
+      "price": 150000,
+      "badge": "Premium",
+      "image_url": "/catalog/vibrador-sube-y-baja-telescopico-usb.webp"
+    },
+    {
+      "id": "gold-fly-original",
+      "name": "Original GOLD FLY™",
+      "category_id": "potenciadores-femeninos",
+      "description": "Afrodisíaco potente en sobres. Mejora el deseo y la sensibilidad, aumenta el disfrute íntimo.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/gold-fly-original.webp"
+    },
+    {
+      "id": "firefox-women-series",
+      "name": "Firefox Women Series",
+      "category_id": "potenciadores-femeninos",
+      "description": "Estimulante sexual femenino en sobres. Línea Women Series. Despierta tu deseo. Bacchus Biotechnology.",
+      "stock": 10,
+      "price": 10000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/firefox-women-series.webp"
+    },
+    {
+      "id": "firefox-women-supplement-5g",
+      "name": "Firefox Women Supplement — Sobre 5 g",
+      "category_id": "potenciadores-femeninos",
+      "description": "Estimulante femenino en sobre 5 g. Polvo incoloro e inodoro. Aumenta el deseo y la lubricación. Compatible con líquidos.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/firefox-women-supplement-5g.webp"
+    },
+    {
+      "id": "groben-penis-fem",
+      "name": "Groben Penis Fem — Potenciador femenino",
+      "category_id": "potenciadores-femeninos",
+      "description": "Potenciador femenino en cápsula. Aumenta el apetito íntimo, mejora la lubricación y la sensibilidad.",
+      "stock": 10,
+      "price": 10000,
+      "image_url": "/catalog/groben-penis-fem.webp"
+    },
+    {
+      "id": "sexlove-plus-chewing-gum",
+      "name": "Sexlove+ Chewing Gum — Chiclet estimulante femenino",
+      "category_id": "potenciadores-femeninos",
+      "description": "Chiclet estimulante femenino, sabor frutas. Aumenta la libido y el deseo. Se consume como un chicle normal.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/sexlove-plus-chewing-gum.webp"
+    },
+    {
+      "id": "firefox-women-sobre-5g-12k",
+      "name": "Potenciador femenino Firefox Women sobre 5 g",
+      "category_id": "potenciadores-femeninos",
+      "description": "Estimulante íntimo femenino en sobre individual de 5 g. Ayuda a activar la excitación, lubricación y sensibilidad de forma natural.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/firefox-women-sobre-5g-12k.webp"
+    },
+    {
+      "id": "sexlove-chicles-libido-caja-x5",
+      "name": "Chicles estimulantes de libido Sexlove+ Fruit Flavor (caja x5)",
+      "category_id": "potenciadores-femeninos",
+      "description": "Gomas de mascar sabor frutal estimulantes para aumentar el deseo femenino y la excitación de forma rápida y práctica.",
+      "stock": 10,
+      "price": 15000,
+      "image_url": "/catalog/sexlove-chicles-libido-caja-x5.webp"
+    },
+    {
+      "id": "xbull-liquido-mujer-sobre",
+      "name": "Potenciador bebible Xbull Energy Drink para mujer",
+      "category_id": "potenciadores-femeninos",
+      "description": "Estimulante femenino líquido Xbull en sobre individual formulado para incentivar el deseo, lubricación y placer.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/xbull-liquido-mujer-sobre.webp"
+    },
+    {
+      "id": "spanish-gold-fly-sex-drops-sobre",
+      "name": "Estimulante femenino Spanish Gold Fly Sex Drops",
+      "category_id": "potenciadores-femeninos",
+      "description": "Gotas estimulantes femeninas en sachet individual dorado. Diseñadas para activar el deseo y la sensibilidad femenina.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/spanish-gold-fly-sex-drops-sobre.webp"
+    },
+    {
+      "id": "firefox-women-polvo-sobre-10k",
+      "name": "Estimulante femenino Firefox Women sobre individual",
+      "category_id": "potenciadores-femeninos",
+      "description": "Estimulante sexual en sobre individual Firefox Bacchus Biotechnology. Ayuda a despertar la pasión y el deseo en la intimidad.",
+      "stock": 10,
+      "price": 10000,
+      "image_url": "/catalog/firefox-women-polvo-sobre-10k.webp"
+    },
+    {
+      "id": "big-penis-honey",
+      "name": "Big Penis Honey",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante masculino 100% natural. Ginseng, maca, miel y hierbas seleccionadas. Tomar 1 sobre diluido en agua 30 min antes.",
+      "stock": 10,
+      "sizes": [
+        {
+          "label": "Paquete x12 sobres",
+          "price": 18000
+        },
+        {
+          "label": "Sobre individual",
+          "price": 7000
+        }
+      ],
+      "image_url": "/catalog/big-penis-honey.webp"
+    },
+    {
+      "id": "groben-penis-gold",
+      "name": "Groben Penis Gold",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante masculino en pasta/sobre. 100% natural, compatible con bebidas. Potencializa la firmeza y retarda la eyaculación.",
+      "stock": 10,
+      "price": 10000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/groben-penis-gold.webp"
+    },
+    {
+      "id": "groben-penis-silver",
+      "name": "Groben Penis Silver",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante masculino en sobre plateado. Firmeza consistente, mayor apetito íntimo y confianza.",
+      "stock": 10,
+      "price": 10000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/groben-penis-silver.webp"
+    },
+    {
+      "id": "groben-penis-maxxx",
+      "name": "Groben Penis MAXXX",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante masculino en sobre naranja. Efecto prolongado por estimulación. 100% natural, compatible con bebidas.",
+      "stock": 10,
+      "price": 10000,
+      "image_url": "/catalog/groben-penis-maxxx.webp"
+    },
+    {
+      "id": "meromacho-comprimido-x2",
+      "name": "Potenciador Mero Macho comprimido x2",
+      "category_id": "potenciadores-masculinos",
+      "description": "Potenciador masculino natural en presentación de 2 tabletas comprimidas. Aumenta la firmeza, energía y resistencia masculina.",
+      "stock": 10,
+      "price": 8000,
+      "image_url": "/catalog/meromacho-comprimido-x2.webp"
+    },
+    {
+      "id": "sex-bull-potenciador-masculino-x2",
+      "name": "Potenciador masculino Sex Bull x2 tabletas",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante sexual masculino 100% natural. Estimula el flujo sanguíneo para una erección firme y duradera. Dosis: 1 tableta 30 min antes.",
+      "stock": 10,
+      "price": 8000,
+      "image_url": "/catalog/sex-bull-potenciador-masculino-x2.webp"
+    },
+    {
+      "id": "big-penis-tabletas-masculinas",
+      "name": "Potenciador masculino Big Penis USA",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante sexual masculino Big Penis USA con ingredientes naturales que favorecen la vitalidad, resistencia y firmeza.",
+      "stock": 10,
+      "sizes": [
+        {
+          "label": "Unidad (1 pastilla)",
+          "price": 8000
+        },
+        {
+          "label": "Caja x3 pastillas",
+          "price": 18000
+        }
+      ],
+      "image_url": "/catalog/big-penis-tabletas-masculinas.webp"
+    },
+    {
+      "id": "xbull-liquido-hombre-sobre",
+      "name": "Potenciador bebible Xbull Energy Drink para hombre",
+      "category_id": "potenciadores-masculinos",
+      "description": "Bebida energizante y estimulante sexual masculino Xbull en sachet individual con extractos botánicos naturales.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/xbull-liquido-hombre-sobre.webp"
+    },
+    {
+      "id": "groben-penis-maxxx-pasta-roja",
+      "name": "Potenciador masculino Groben Penis MAXXX pasta",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante sexual masculino en pasta/sobre rojo. 100% natural, compatible con licor. Efecto duradero y mayor vigor.",
+      "stock": 10,
+      "price": 10000,
+      "image_url": "/catalog/groben-penis-maxxx-pasta-roja.webp"
+    },
+    {
+      "id": "groben-penis-gold-pasta-dorada",
+      "name": "Potenciador masculino Groben Penis Gold pasta",
+      "category_id": "potenciadores-masculinos",
+      "description": "Estimulante sexual masculino en pasta/sobre dorado. Fórmula natural líder en el mercado para mayor firmeza y energía masculina.",
+      "stock": 10,
+      "price": 10000,
+      "image_url": "/catalog/groben-penis-gold-pasta-dorada.webp"
+    },
+    {
+      "id": "maxman-capsula-unidad-8k",
+      "name": "Potenciador masculino Maxman blister individual",
+      "category_id": "potenciadores-masculinos",
+      "description": "Blister individual del suplemento Maxman para hombre. Estimula la potencia, resistencia y control sexual.",
+      "stock": 10,
+      "price": 8000,
+      "image_url": "/catalog/maxman-capsula-unidad-8k.webp"
+    },
+    {
+      "id": "anal-eze-delicious-desensibilizante-5g",
+      "name": "Desensibilizante anal Anal Eze Delicious 5 g",
+      "category_id": "dilatadores-desensibilizantes",
+      "description": "Crema desensibilizante y relajante Anal Eze Delicious de 5 g para masaje y preparación íntima. Facilita la relajación muscular para mayor confort.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/anal-eze-delicious-desensibilizante-5g.webp"
+    },
+    {
+      "id": "anal-blu-cerotabu-desensibilizante",
+      "name": "Desensibilizante anal Anal Blu Cerotabú",
+      "category_id": "dilatadores-desensibilizantes",
+      "description": "Fórmula desensibilizante Cerotabú Anal Blu a base de agua con benzocaína para facilitar la relajación en la zona íntima.",
+      "stock": 10,
+      "price": 12000,
+      "image_url": "/catalog/anal-blu-cerotabu-desensibilizante.webp"
+    },
+    {
+      "id": "kit-bondage-10-piezas",
+      "name": "Kit bondage 10 piezas",
+      "category_id": "sadomasoquismo",
+      "description": "Set para parejas: esposas ajustables, antifaz, mordaza, látigo, pluma, cuerda, collar con correa, pinzas. Material negro con herrajes.",
+      "stock": 10,
+      "price": 30000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/kit-bondage-10-piezas.webp"
+    },
+    {
+      "id": "set-bondage-anti-back-handcuffs",
+      "name": "Set bondage Anti-Back Handcuffs",
+      "category_id": "sadomasoquismo",
+      "description": "Arnés con collar acolchado en cuero sintético, esposas para muñecas y correas ajustables para inmovilización a la espalda.",
+      "stock": 10,
+      "price": 45000,
+      "badge": "Nuevo",
+      "image_url": "/catalog/set-bondage-anti-back-handcuffs.webp"
+    },
+    {
+      "id": "kit-fetiche-10-piezas",
+      "name": "Kit fetiche y bondage 10 piezas en cuero sintético",
+      "category_id": "sadomasoquismo",
+      "description": "Set completo fetiche de 10 piezas en cuero sintético de alta resistencia. Incluye esposas de manos y tobillos, antifaz, mordaza de bola, látigo, pluma, collar con correa, pinzas y cuerdas.",
+      "stock": 10,
+      "price": 130000,
+      "badge": "Completo",
+      "image_url": "/catalog/kit-fetiche-10-piezas.webp"
+    },
+    {
+      "id": "mordaza-con-pezoneras",
+      "name": "Mordaza con pezoneras ajustables",
+      "category_id": "sadomasoquismo",
+      "description": "Mordaza de bola en silicona suave con correas ajustables de cuero sintético y pinzas/pezoneras con cadena metálica extraíble.",
+      "stock": 10,
+      "price": 45000,
+      "image_url": "/catalog/mordaza-con-pezoneras.webp"
+    },
+    {
+      "id": "latigo-cuero-sintetico",
+      "name": "Látigo flogger en cuero sintético",
+      "category_id": "sadomasoquismo",
+      "description": "Látigo tipo flogger con múltiples tiras en cuero sintético flexible y mango ergonómico con correa de seguridad.",
+      "stock": 10,
+      "price": 35000,
+      "image_url": "/catalog/latigo-cuero-sintetico.webp"
+    },
+    {
+      "id": "esposas-cuero-sintetico-peluche",
+      "name": "Esposas en cuero sintético con forro afelpado",
+      "category_id": "sadomasoquismo",
+      "description": "Esposas ajustables de alta resistencia en cuero sintético con forro interno afelpado suave para máxima comodidad y seguridad.",
+      "stock": 10,
+      "price": 35000,
+      "image_url": "/catalog/esposas-cuero-sintetico-peluche.webp"
+    },
+    {
+      "id": "arnes-para-dildo-sencillo",
+      "name": "Arnés para dildo sencillo Soumission",
+      "category_id": "sadomasoquismo",
+      "description": "Arnés ajustable con correas elásticas y panel frontal en cuero sintético con aro metálico compatible con dildos de base ancha.",
+      "stock": 10,
+      "price": 45000,
+      "image_url": "/catalog/arnes-para-dildo-sencillo.webp"
+    },
+    {
+      "id": "arnes-con-dildo-realista",
+      "name": "Arnés con dildo realista color piel",
+      "category_id": "sadomasoquismo",
+      "description": "Conjunto de arnés ajustable con dildo realista flexible color piel con textura detallada y base estable.",
+      "stock": 10,
+      "price": 100000,
+      "image_url": "/catalog/arnes-con-dildo-realista.webp"
+    },
+    {
+      "id": "arnes-dildo-mars-series",
+      "name": "Arnés con dildo Mars Dildo Series",
+      "category_id": "sadomasoquismo",
+      "description": "Set de arnés ergonómico con dildo anatómico Mars Dildo Series en caja de presentación. Correas ajustables para un acople perfecto.",
+      "stock": 10,
+      "price": 100000,
+      "image_url": "/catalog/arnes-dildo-mars-series.webp"
+    },
+    {
+      "id": "aroma-estimulante-hermin-flow-blush",
+      "name": "Aroma estimulante ambientador Hermin / Flow Blush",
+      "category_id": "otros",
+      "description": "Aroma ambiental concentrado en frasco de vidrio hermético que brinda sensaciones de intensa relajación, motivación y energía sensorial.",
+      "stock": 10,
+      "price": 25000,
+      "image_url": "/catalog/aroma-estimulante-hermin-flow-blush.webp"
     }
   ]
 }

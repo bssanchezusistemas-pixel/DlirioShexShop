@@ -32,9 +32,21 @@ export async function updateSession(request: NextRequest) {
     },
   );
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  let user = null;
+  let timer: NodeJS.Timeout | undefined;
+  try {
+    const userPromise = supabase.auth.getUser();
+    const timeoutPromise = new Promise<{ data: { user: null }; error: Error }>((_, reject) => {
+      timer = setTimeout(() => reject(new Error("Supabase auth timeout")), 3000);
+    });
+    const res = await Promise.race([userPromise, timeoutPromise]);
+    user = res.data?.user ?? null;
+  } catch (err) {
+    console.warn("[middleware] Supabase auth no disponible o timeout:", err);
+    user = null;
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
 
   const { pathname } = request.nextUrl;
   const isLoginPage = pathname === "/admin/login";
