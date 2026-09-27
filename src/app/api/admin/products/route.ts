@@ -17,10 +17,11 @@ export async function GET(request: Request) {
 
   const { limit, offset } = parsePagination(new URL(request.url).searchParams);
 
-  const { data, error } = await auth.supabase
+  const { data, count, error } = await auth.supabase
     .from("products")
     .select(
       "id, name, price, stock, image_url, is_active, consult_only, category_id, created_at",
+      { count: "exact" },
     )
     .order("created_at", { ascending: false })
     .range(offset, offset + limit - 1);
@@ -29,7 +30,12 @@ export async function GET(request: Request) {
     return adminError("Error al cargar productos", 500, error);
   }
 
-  return NextResponse.json({ products: data ?? [], limit, offset });
+  return NextResponse.json({
+    products: data ?? [],
+    total: count ?? (data?.length ?? 0),
+    limit,
+    offset,
+  });
 }
 
 export async function DELETE(request: Request) {

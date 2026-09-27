@@ -7,15 +7,19 @@ import type { DbProduct } from "@/lib/types";
 
 export default function AdminProductsPage() {
   const [products, setProducts] = useState<DbProduct[]>([]);
+  const [totalCount, setTotalCount] = useState<number | null>(null);
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [deleteError, setDeleteError] = useState("");
 
   const loadProducts = () => {
     setLoading(true);
-    fetch("/api/admin/products")
+    fetch("/api/admin/products?limit=200")
       .then((res) => res.json())
-      .then((data) => setProducts(data.products ?? []))
+      .then((data) => {
+        setProducts(data.products ?? []);
+        if (typeof data.total === "number") setTotalCount(data.total);
+      })
       .finally(() => setLoading(false));
   };
 
@@ -61,7 +65,7 @@ export default function AdminProductsPage() {
             Productos
           </h1>
           <p className="mt-1 text-sm text-white/50">
-            {products.length} productos en catálogo
+            {totalCount ?? products.length} productos en catálogo
           </p>
         </div>
         <Link
