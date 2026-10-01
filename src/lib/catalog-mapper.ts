@@ -47,27 +47,19 @@ export function buildCatalogFromDb(
   categories: DbCategory[],
   products: DbProduct[],
 ): CatalogCategory[] {
-  const dbProductIds = new Set(products.map((p) => p.id));
-
   return categories
     .sort((a, b) => a.sort_order - b.sort_order)
     .map((category) => {
-      const dbItems = products
+      const items = products
         .filter((p) => p.category_id === category.id && p.is_active)
         .map(mapProductToCatalogItem);
-
-      // Supplement any items from static catalog for this category that aren't in DB
-      const staticCat = CATALOG_CATEGORIES.find((c) => c.id === category.id);
-      const missingStaticItems = (staticCat?.items ?? []).filter(
-        (it) => !dbProductIds.has(it.id)
-      );
 
       return {
         id: category.id as CatalogCategoryId,
         label: category.label,
         tagline: category.tagline,
         accentColor: category.accent_color,
-        items: [...dbItems, ...missingStaticItems],
+        items,
       };
     });
 }

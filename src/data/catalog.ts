@@ -74,14 +74,6 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
         "price": 35000,
         "image": "/catalog/gummies-viking-cereza-60g.webp",
         "stock": 10
-      },
-      {
-        "id": "ropa-comestible-gummies-viking-cherry",
-        "name": "Ropa íntima comestible Gummies Viking Cherry 60 g",
-        "description": "Lencería comestible elaborada en dulce gomita sabor a cereza/frutas. Peso neto 60 g. Diseñada para juegos sensuales en pareja.",
-        "image": "/catalog/ropa-comestible-gummies-viking-cherry.webp",
-        "stock": 10,
-        "price": 35000
       }
     ]
   },
@@ -472,15 +464,6 @@ export const CATALOG_CATEGORIES: CatalogCategory[] = [
         "price": 70000,
         "image": "/catalog/men-powerup-penis-pump.webp",
         "stock": 10,
-        "badge": "+18"
-      },
-      {
-        "id": "bomba-vacio-alargadora-hombre-80k",
-        "name": "Bomba de vacío y cilindro de succión para hombre",
-        "description": "Cilindro transparente graduado de 220 mm x 65 mm en ABS resistente con manguera flexible y mango ergonómico de succión manual.",
-        "image": "/catalog/bomba-vacio-alargadora-hombre-80k.webp",
-        "stock": 10,
-        "price": 80000,
         "badge": "+18"
       },
       {

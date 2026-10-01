@@ -7,6 +7,8 @@ import {
 } from "@/data/catalog";
 import type { DbCategory, DbProduct } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+
 function createAnonClient() {
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -34,7 +36,7 @@ export async function GET() {
     if (catError || prodError || !categories?.length) {
       return NextResponse.json(
         { categories: fallbackCatalog(), source: "fallback" },
-        { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=120" } },
+        { headers: { "Cache-Control": "no-store, no-cache, must-revalidate" } },
       );
     }
 
@@ -45,12 +47,12 @@ export async function GET() {
 
     return NextResponse.json(
       { categories: catalog, source: "database" },
-      { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=120" } },
+      { headers: { "Cache-Control": "no-store, no-cache, must-revalidate" } },
     );
   } catch {
     return NextResponse.json(
       { categories: fallbackCatalog(), source: "fallback" },
-      { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=120" } },
+      { headers: { "Cache-Control": "no-store, no-cache, must-revalidate" } },
     );
   }
 }
